@@ -15,8 +15,8 @@ const projets = [
     lien: "./projets/menu-burger/index.html"
   },
   {
-    image: ".//projets/images/horlogejs.png",
-    titre: "Horloge en temps réel",
+    image: ".//projets/images/HorelogeJS.png",
+    titre: "Horeloge en temps réel",
     explication: "Sur cette page nous avons fait une horeloge qui affiche l'heure en temps réel avec du javascript.",
     bouton: "Voir la page",
     lien: "./projets/horloge-simple/index.html"
@@ -29,7 +29,7 @@ const projets = [
     lien: "./projets/tirageloto/index.html"
   },
   {
-    image: ".//projets/images/lancerdes.png",
+    image: ".//projets/images/lancerdés.png",
     titre: "Simulateur de lancé de dé",
     explication: "Sur cette page vous porrez retrouver un simlateur de lancé de dé qui donne un chiffre aléatoire entre 1 et 6.",
     bouton: "Voir la page",

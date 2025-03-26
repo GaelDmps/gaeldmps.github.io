@@ -15,8 +15,8 @@ const projets = [
     lien: "./projets/menu-burger/index.html"
   },
   {
-    image: ".//projets/images/horlogejs.png",
-    titre: "Horloge en temps réel",
+    image: ".//projets/images/HorlogeJS.png",
+    titre: "Horeloge en temps réel",
     explication: "Sur cette page nous avons fait une horeloge qui affiche l'heure en temps réel avec du javascript.",
     bouton: "Voir la page",
     lien: "./projets/horloge-simple/index.html"
