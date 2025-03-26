@@ -1,0 +1,101 @@
+body {
+	font-family: Verdana, sans-serif;
+	color: #222;
+	text-align: center;
+}
+
+main {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+#display {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.face {
+	background-color: #e7e7e7;
+	width: 110px;
+	height: 110px;
+	padding: 10px;
+	margin: 1%;
+	box-sizing: border-box;
+	box-shadow:
+		inset 0 5px white,
+		inset 0 -5px #bbb,
+		inset 5px 0 #d7d7d7,
+		inset -5px 0 #d7d7d7;
+	border-radius: 10%;
+	flex: 0 0 auto;
+	display: grid;
+	grid-template-areas:
+		"a . c"
+		"e g f"
+		"d . b";
+}
+
+.pip {
+	display: block;
+	align-self: center;
+	justify-self: center;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	margin: 4px;
+	background-color: #333;
+	box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}
+
+.pip:nth-child(2) {
+	grid-area: b;
+}
+
+.pip:nth-child(3) {
+	grid-area: c;
+}
+
+.pip:nth-child(4) {
+	grid-area: d;
+}
+
+.pip:nth-child(5) {
+	grid-area: e;
+}
+
+.pip:nth-child(6) {
+	grid-area: f;
+}
+
+.pip:nth-child(odd):last-child {
+	grid-area: g;
+}
+
+button {
+	display: block;
+	margin: 1em auto;
+	width: 250px;
+	padding: 0.5em 1em;
+	font-size: 1.3rem;
+	border-radius: 6px;
+	color: white;
+	background-color: #555;
+	cursor: pointer;
+}
+
+/* Styles de la page about */
+main.about {
+	text-align: left;
+}
+
+pre {
+	background-color: #e7e7e7;
+	color: red;
+	padding: 1em;
+}

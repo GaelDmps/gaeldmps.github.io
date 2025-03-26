@@ -1,0 +1,55 @@
+body {
+	font-family: Verdana, sans-serif;
+	color: #222;
+	text-align: center;
+	background: url('img/background.jpg') no-repeat center fixed;
+}
+
+.container {
+	width: 80%;
+	max-width: 1200px;
+	margin: 3rem auto;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 2%;
+	border-radius: 1rem;
+}
+
+main {
+	min-height: 50vh;
+}
+
+h1 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+#display {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	flex-direction: row-reverse;
+	justify-content: center;
+}
+
+.boule {
+	font-size: 4rem;
+	font-weight: bold;
+	margin: 0 2%;
+	color: red;
+}
+
+.boule:last-child {
+	color: blue;
+}
+
+button {
+	display: block;
+	margin: 1rem auto;
+	width: fit-content;
+	padding: 0.5rem 2rem;
+	font-size: 1.3rem;
+	border: 0;
+	border-radius: 0.5rem;
+	color: white;
+	background-color: #0C0;
+	cursor: pointer;
+}
