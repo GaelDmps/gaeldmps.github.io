@@ -5,14 +5,14 @@ const projets = [
     titre: "Ma première page test Javascript",
     explication: "J'ai fait mes premiers tests en Javascript .",
     bouton: "Voir la page",
-    lien: "./projets/JS-vidéo/index.html"
+    lien: "./projets/js-video/index.html"
   },
   {
     image: ".//projets/images/burger.png",
     titre: "Page Menu Burger",
     explication: "Nous avons fait un menu burger avec du Javascript.",
     bouton: "Voir la page",
-    lien: "./projets/Menu-burger/index.html"
+    lien: "./projets/menu-burger/index.html"
   },
   {
     image: ".//projets/images/HorelogeJS.png",
@@ -33,7 +33,7 @@ const projets = [
     titre: "Simulateur de lancé de dé",
     explication: "Sur cette page vous porrez retrouver un simlateur de lancé de dé qui donne un chiffre aléatoire entre 1 et 6.",
     bouton: "Voir la page",
-    lien: "./projets/lancé-de-dés/index.html"
+    lien: "./projets/lance-de-des/index.html"
   },
   {
     image: ".//projets/images/boutique.png",
