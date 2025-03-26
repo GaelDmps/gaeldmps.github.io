@@ -234,7 +234,7 @@ canvas {
     margin: 1rem auto;
     overflow: hidden;
 }
-/* .slider-escalade .slider-escaladeimg{
+.slider-escalade .slider-escaladeimg{
     display: flex;
     align-items: center;
     animation: slideresc 30s infinite ease-in-out;
@@ -270,7 +270,7 @@ canvas {
     100%{
         transform: translateX(-500%);
     }
-} */
+}
 
 /* -----------------------------------------------------------MANGA----------------------------------------------------------------- */
 

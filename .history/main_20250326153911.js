@@ -43,8 +43,6 @@ const projets = [
     lien: "./projets/boutique/index.html"
   },
 ]
-
-// création de la première partie de la section passions --> la div escalade
 const escalade = [
   {
     image1: "./img/escalade/escalade-moi",
@@ -54,7 +52,9 @@ const escalade = [
     image5: "./img/escalade/suspendu-2",
     titre: "Ma passion sport : l'escalade",
     commentaire: "Je me suis mit a l'escalade avec mon meilleur ami et j'ai vite accroché au point d'en faire jusqu'à 12 heures par semaine quand j'étais a l'université. Depuis que j'y suis plus je vais a la grande salle de Besançon quand je peux."
-}]
+},
+
+]
 
 function showprojects() {
 
@@ -90,31 +90,6 @@ function showprojects() {
   
 }
 
-
-function showescalade() {
-
-  const displayescalade = document.getElementById('escalade')
-
-  displayescalade.innerHTML = ""
-
-  for(const element of escalade){
-    const divimages = document.createElement('div')
-    divimages.classList.add('slider-escalade')
-    displayescalade.appendChild(divimages)
-
-    const imgcontainer = document.createElement('div')
-    imgcontainer.classList.add('slider-escaladeimg')
-    divimages.appendChild(imgcontainer)
-
-
-
-
-    const esctitre = document.createElement('p')
-    esctitre.innerText = element.commentaire
-    imgcontainer.appendChild(esctitre)
-  }
-
-}
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -198,10 +173,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Démarrage de l'animation
   animate();
 
-// Appel des fonctions qui affichent les différentes parties de la page
 
   showprojects()
-  showescalade()
+
 
 
 

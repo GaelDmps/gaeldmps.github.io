@@ -93,25 +93,17 @@ function showprojects() {
 
 function showescalade() {
 
-  const displayescalade = document.getElementById('escalade')
+  const displayescalade = DocumentFragment.getElementById('escalade')
 
   displayescalade.innerHTML = ""
 
   for(const element of escalade){
-    const divimages = document.createElement('div')
-    divimages.classList.add('slider-escalade')
+    const divimages = createElement('div')
+    divimages.classlist.add('slider-escalade')
     displayescalade.appendChild(divimages)
 
-    const imgcontainer = document.createElement('div')
-    imgcontainer.classList.add('slider-escaladeimg')
-    divimages.appendChild(imgcontainer)
-
-
-
-
-    const esctitre = document.createElement('p')
-    esctitre.innerText = element.commentaire
-    imgcontainer.appendChild(esctitre)
+    const imgcontainer = createElement('div')
+    imgcontainer.classlist.add('')
   }
 
 }
@@ -198,10 +190,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Démarrage de l'animation
   animate();
 
-// Appel des fonctions qui affichent les différentes parties de la page
 
   showprojects()
-  showescalade()
+
 
 
 

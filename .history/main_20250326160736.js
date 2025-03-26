@@ -93,25 +93,23 @@ function showprojects() {
 
 function showescalade() {
 
-  const displayescalade = document.getElementById('escalade')
+  const displayescalade = DocumentFragment.getElementById('escalade')
 
   displayescalade.innerHTML = ""
 
   for(const element of escalade){
     const divimages = document.createElement('div')
-    divimages.classList.add('slider-escalade')
+    divimages.classlist.add('slider-escalade')
     displayescalade.appendChild(divimages)
 
     const imgcontainer = document.createElement('div')
-    imgcontainer.classList.add('slider-escaladeimg')
+    imgcontainer.classlist.add('slider-escaladeimg')
     divimages.appendChild(imgcontainer)
 
 
 
 
-    const esctitre = document.createElement('p')
-    esctitre.innerText = element.commentaire
-    imgcontainer.appendChild(esctitre)
+    const esctitre = 
   }
 
 }

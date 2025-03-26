@@ -230,11 +230,11 @@ canvas {
 /* -----------------------------------------------------------ESCALADE----------------------------------------------------------------- */
 
 .slider-escalade{
-    max-width: 20%;
+    max-width: 100%;
     margin: 1rem auto;
     overflow: hidden;
 }
-/* .slider-escalade .slider-escaladeimg{
+.slider-escalade .slider-escaladeimg{
     display: flex;
     align-items: center;
     animation: slideresc 30s infinite ease-in-out;
@@ -243,7 +243,7 @@ canvas {
 .slider-escaladeimg img{
     flex-shrink: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 15px;
 }
 @keyframes slideresc {
@@ -270,7 +270,7 @@ canvas {
     100%{
         transform: translateX(-500%);
     }
-} */
+}
 
 /* -----------------------------------------------------------MANGA----------------------------------------------------------------- */
 
