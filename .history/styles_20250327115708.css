@@ -239,11 +239,6 @@ canvas {
     align-items: center;
 }
 
-#jeux{
-    display: flex;
-    align-items: center;
-}
-
 .position{
     display: flex;
     justify-content: space-around;
@@ -268,9 +263,10 @@ canvas {
 }
 .slider-img img{
     flex-shrink: 0;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 30px;
+    padding: 1px;
 }
 @keyframes slideresc {
     0%,

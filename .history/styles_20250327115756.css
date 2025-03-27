@@ -239,11 +239,6 @@ canvas {
     align-items: center;
 }
 
-#jeux{
-    display: flex;
-    align-items: center;
-}
-
 .position{
     display: flex;
     justify-content: space-around;

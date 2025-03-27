@@ -63,7 +63,7 @@ const manga = [
     image2: "./img/manga/carnets.jpg",
     image3: "./img/manga/Frieren2.jpg",
     image4: "./img/manga/one-piece-100.jpg",
-    image5: "./img/manga/sun-ken-rock.jpg",
+    image5: "./img/manga/skr-artbook.jpg",
     titre: "Les manga",
     commentaire: "Depuis quelques années j'adore les manga, lire tome après tome et découvrir les avecnturs des personnages que j'adore. Que ça soit du combat, de l'aventure, ou juste tout calme et plein de réflexion j'aime tout type d'histoire et si je suis pris dedans je peux lire jusqu'a un tome en une heure donc tout lire en une journée si je veux. Les dessins d'artistes tous aussi talentueux les uns que les autres me font plonger dasn leur univers j'aime cette sensation de liberté quand je lis."
 }]
@@ -240,52 +240,52 @@ function showjeux() {
 
   for(const element of jeux){
 
-    const articlejeux = document.createElement('article')
-    articlejeux.classList.add('position')
-    displayjeux.appendChild(articlejeux)
+    const articleesc = document.createElement('article')
+    articleesc.classList.add('position')
+    displayescalade.appendChild(articleesc)
 
     const divimages = document.createElement('div')
     divimages.classList.add('slider')
-    articlejeux.appendChild(divimages)
+    articleesc.appendChild(divimages)
     
     const imgcontainer = document.createElement('div')
     imgcontainer.classList.add('slider-img')
     divimages.appendChild(imgcontainer)
     
-    const imgjeux1 = document.createElement('img')
-    imgjeux1.src = element.image1
-    imgcontainer.appendChild(imgjeux1)
+    const imgescalade1 = document.createElement('img')
+    imgescalade1.src = element.image1
+    imgcontainer.appendChild(imgescalade1)
     
-    const imgjeux2 = document.createElement('img')
-    imgjeux2.src = element.image2
-    imgcontainer.appendChild(imgjeux2)
+    const imgescalade2 = document.createElement('img')
+    imgescalade2.src = element.image2
+    imgcontainer.appendChild(imgescalade2)
     
-    const imgjeux3 = document.createElement('img')
-    imgjeux3.src = element.image3
-    imgcontainer.appendChild(imgjeux3)
+    const imgescalade3 = document.createElement('img')
+    imgescalade3.src = element.image3
+    imgcontainer.appendChild(imgescalade3)
     
-    const imgjeux4 = document.createElement('img')
-    imgjeux4.src = element.image4
-    imgcontainer.appendChild(imgjeux4)
+    const imgescalade4 = document.createElement('img')
+    imgescalade4.src = element.image4
+    imgcontainer.appendChild(imgescalade4)
 
-    const imgjeux5 = document.createElement('img')
-    imgjeux5.src = element.image5
-    imgcontainer.appendChild(imgjeux5)
+    const imgescalade5 = document.createElement('img')
+    imgescalade5.src = element.image5
+    imgcontainer.appendChild(imgescalade5)
     
-    const imgjeuxretour = document.createElement('img')
-    imgjeuxretour.src = element.image1
-    imgcontainer.appendChild(imgjeuxretour)
+    const imgescaladeretour = document.createElement('img')
+    imgescaladeretour.src = element.image1
+    imgcontainer.appendChild(imgescaladeretour)
 
     const group = document.createElement('hgroup')
-    articlejeux.appendChild(group)
+    articleesc.appendChild(group)
 
-    const jeuxtitre = document.createElement('h2')
-    jeuxtitre.innerText = element.titre
-    group.appendChild(jeuxtitre)
+    const esctitre = document.createElement('h2')
+    esctitre.innerText = element.titre
+    group.appendChild(esctitre)
 
-    const jeuxcommentaire = document.createElement('p')
-    jeuxcommentaire.innerText = element.commentaire
-    group.appendChild(jeuxcommentaire)
+    const esccommentaire = document.createElement('p')
+    esccommentaire.innerText = element.commentaire
+    group.appendChild(esccommentaire)
   }
 }
 
@@ -376,7 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
   showprojects()
   showescalade()
   showmanga()
-  showjeux()
+
 
 
 

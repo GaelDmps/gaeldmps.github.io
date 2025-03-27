@@ -63,7 +63,7 @@ const manga = [
     image2: "./img/manga/carnets.jpg",
     image3: "./img/manga/Frieren2.jpg",
     image4: "./img/manga/one-piece-100.jpg",
-    image5: "./img/manga/sun-ken-rock.jpg",
+    image5: "./img/manga/skr-artbook.jpg",
     titre: "Les manga",
     commentaire: "Depuis quelques années j'adore les manga, lire tome après tome et découvrir les avecnturs des personnages que j'adore. Que ça soit du combat, de l'aventure, ou juste tout calme et plein de réflexion j'aime tout type d'histoire et si je suis pris dedans je peux lire jusqu'a un tome en une heure donc tout lire en une journée si je veux. Les dessins d'artistes tous aussi talentueux les uns que les autres me font plonger dasn leur univers j'aime cette sensation de liberté quand je lis."
 }]
@@ -242,7 +242,7 @@ function showjeux() {
 
     const articlejeux = document.createElement('article')
     articlejeux.classList.add('position')
-    displayjeux.appendChild(articlejeux)
+    displayescalade.appendChild(articlejeux)
 
     const divimages = document.createElement('div')
     divimages.classList.add('slider')

@@ -242,7 +242,7 @@ function showjeux() {
 
     const articlejeux = document.createElement('article')
     articlejeux.classList.add('position')
-    displayjeux.appendChild(articlejeux)
+    displayescalade.appendChild(articlejeux)
 
     const divimages = document.createElement('div')
     divimages.classList.add('slider')
