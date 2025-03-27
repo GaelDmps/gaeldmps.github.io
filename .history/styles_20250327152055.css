@@ -243,15 +243,6 @@ canvas {
     display: flex;
     align-items: center;
 }
-#setup{
-    display: flex;
-    align-items: center;
-}
-
-#lego{
-    display: flex;
-    align-items: center;
-}
 
 .position{
     display: flex;

@@ -248,11 +248,6 @@ canvas {
     align-items: center;
 }
 
-#lego{
-    display: flex;
-    align-items: center;
-}
-
 .position{
     display: flex;
     justify-content: space-around;

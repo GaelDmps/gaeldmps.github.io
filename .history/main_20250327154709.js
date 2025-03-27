@@ -76,7 +76,7 @@ const setup = [
     image4: "./img/setup/setup-2.jpg",
     image5: "./img/setup/bibliotheque.jpg",
     titre: "Mon setup et mon décor",
-    commentaire: "En 2022 j'ai monté mon pc gamer pour mon plus grand bonheur. Dépenser mon premier salaire de job d'été dans un pc qui me donne toujours autant de délires pendant mes soirées jeux avec mes amis ou juste me permet de regarder ce que je veux posé tranquillement c'est incroyable. Le fait de l'avoir monté moi même a été une expérience que j'ai adoré. Depuis le montagede ce pc je l'améliore en ajoutant des composants comme plus de stockage en SSD ou plus de RAM ou en changeant certaines parties de mon setup comme la souris le tapis le clavier. Les parties les plus récentes sont une nouvelle chaise et un micro qui a changé mon expérience de jeu. J4ai hate de rejouer dessus après chaque fin de session, découvrir de nouveaux jeux et avoir toujours autant de fous rires avec mes amis."
+    commentaire: ""
 }]
 
 const jeux = [

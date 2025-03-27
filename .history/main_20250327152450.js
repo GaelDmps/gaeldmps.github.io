@@ -68,17 +68,6 @@ const manga = [
     commentaire: "Depuis quelques années j'adore les manga, lire tome après tome et découvrir les avecnturs des personnages que j'adore. Que ça soit du combat, de l'aventure, ou juste tout calme et plein de réflexion j'aime tout type d'histoire et si je suis pris dedans je peux lire jusqu'a un tome en une heure donc tout lire en une journée si je veux. Les dessins d'artistes tous aussi talentueux les uns que les autres me font plonger dasn leur univers j'aime cette sensation de liberté quand je lis."
 }]
 
-const setup = [
-  {
-    image1: "./img/setup/montage.jpg",
-    image2: "./img/setup/setup-avant-pc.jpg",
-    image3: "./img/setup/setup.jpg",
-    image4: "./img/setup/setup-2.jpg",
-    image5: "./img/setup/bibliotheque.jpg",
-    titre: "Mon setup et mon décor",
-    commentaire: "En 2022 j'ai monté mon pc gamer pour mon plus grand bonheur. Dépenser mon premier salaire de job d'été dans un pc qui me donne toujours autant de délires pendant mes soirées jeux avec mes amis ou juste me permet de regarder ce que je veux posé tranquillement c'est incroyable. Le fait de l'avoir monté moi même a été une expérience que j'ai adoré. Depuis le montagede ce pc je l'améliore en ajoutant des composants comme plus de stockage en SSD ou plus de RAM ou en changeant certaines parties de mon setup comme la souris le tapis le clavier. Les parties les plus récentes sont une nouvelle chaise et un micro qui a changé mon expérience de jeu. J4ai hate de rejouer dessus après chaque fin de session, découvrir de nouveaux jeux et avoir toujours autant de fous rires avec mes amis."
-}]
-
 const jeux = [
   {
     image1: "./img/jeux/auto-craft.png",
@@ -243,63 +232,6 @@ function showescalade() {
 }
 
 
-function showsetup() {
-
-  const displaysetup = document.getElementById('setup')
-
-  displaysetup.innerHTML = ""
-
-  for(const element of setup){
-
-    const articlesetup = document.createElement('article')
-    articlesetup.classList.add('position')
-    displaysetup.appendChild(articlesetup)
-
-    const divimages = document.createElement('div')
-    divimages.classList.add('slider')
-    articlesetup.appendChild(divimages)
-    
-    const imgcontainer = document.createElement('div')
-    imgcontainer.classList.add('slider-img')
-    divimages.appendChild(imgcontainer)
-    
-    const imgsetup1 = document.createElement('img')
-    imgsetup1.src = element.image1
-    imgcontainer.appendChild(imgsetup1)
-    
-    const imgsetup2 = document.createElement('img')
-    imgsetup2.src = element.image2
-    imgcontainer.appendChild(imgsetup2)
-    
-    const imgsetup3 = document.createElement('img')
-    imgsetup3.src = element.image3
-    imgcontainer.appendChild(imgsetup3)
-    
-    const imgsetup4 = document.createElement('img')
-    imgsetup4.src = element.image4
-    imgcontainer.appendChild(imgsetup4)
-
-    const imgsetup5 = document.createElement('img')
-    imgsetup5.src = element.image5
-    imgcontainer.appendChild(imgsetup5)
-    
-    const imgsetupretour = document.createElement('img')
-    imgsetupretour.src = element.image1
-    imgcontainer.appendChild(imgsetupretour)
-
-    const group = document.createElement('hgroup')
-    articlesetup.appendChild(group)
-
-    const setuptitre = document.createElement('h2')
-    setuptitre.innerText = element.titre
-    group.appendChild(setuptitre)
-
-    const setupcommentaire = document.createElement('p')
-    setupcommentaire.innerText = element.commentaire
-    group.appendChild(setupcommentaire)
-  }
-
-}
 
 function showjeux() {
 
@@ -445,8 +377,8 @@ document.addEventListener('DOMContentLoaded', () => {
   showprojects()
   showescalade()
   showmanga()
-  showsetup()  
   showjeux()
+
 
 
 

@@ -75,8 +75,8 @@ const setup = [
     image3: "./img/setup/setup.jpg",
     image4: "./img/setup/setup-2.jpg",
     image5: "./img/setup/bibliotheque.jpg",
-    titre: "Mon setup et mon décor",
-    commentaire: "En 2022 j'ai monté mon pc gamer pour mon plus grand bonheur. Dépenser mon premier salaire de job d'été dans un pc qui me donne toujours autant de délires pendant mes soirées jeux avec mes amis ou juste me permet de regarder ce que je veux posé tranquillement c'est incroyable. Le fait de l'avoir monté moi même a été une expérience que j'ai adoré. Depuis le montagede ce pc je l'améliore en ajoutant des composants comme plus de stockage en SSD ou plus de RAM ou en changeant certaines parties de mon setup comme la souris le tapis le clavier. Les parties les plus récentes sont une nouvelle chaise et un micro qui a changé mon expérience de jeu. J4ai hate de rejouer dessus après chaque fin de session, découvrir de nouveaux jeux et avoir toujours autant de fous rires avec mes amis."
+    titre: "Les Jeux vidéo",
+    commentaire: "Quand j'étais petit je jouais sur la Wii et maintenant je joue encore mais sur un ordinateur monté par mes soins et assez performant pour faire tourner plein de jeux comme ARK, Cyberpunk, Minecraft avec des mods par dizaines, Subnautica et plein d'autres. Les osirées jeux entre amis j'aodre ça qu'on joue a des jeux droles comme Lethal company ou des jeux plus calmes mais tout aussi droles en multi comme Minecraft. J¨Les jeux vidéo m'ont fait grandir et m'ont permi de profiter de moments inoubliables avec mes amis."
 }]
 
 const jeux = [
@@ -255,6 +255,17 @@ function showsetup() {
     articlesetup.classList.add('position')
     displaysetup.appendChild(articlesetup)
 
+    const group = document.createElement('hgroup')
+    articlesetup.appendChild(group)
+
+    const setuptitre = document.createElement('h2')
+    setuptitre.innerText = element.titre
+    group.appendChild(setuptitre)
+
+    const setupcommentaire = document.createElement('p')
+    setupcommentaire.innerText = element.commentaire
+    group.appendChild(setupcommentaire)
+
     const divimages = document.createElement('div')
     divimages.classList.add('slider')
     articlesetup.appendChild(divimages)
@@ -287,16 +298,6 @@ function showsetup() {
     imgsetupretour.src = element.image1
     imgcontainer.appendChild(imgsetupretour)
 
-    const group = document.createElement('hgroup')
-    articlesetup.appendChild(group)
-
-    const setuptitre = document.createElement('h2')
-    setuptitre.innerText = element.titre
-    group.appendChild(setuptitre)
-
-    const setupcommentaire = document.createElement('p')
-    setupcommentaire.innerText = element.commentaire
-    group.appendChild(setupcommentaire)
   }
 
 }
@@ -445,8 +446,8 @@ document.addEventListener('DOMContentLoaded', () => {
   showprojects()
   showescalade()
   showmanga()
-  showsetup()  
   showjeux()
+
 
 
 
