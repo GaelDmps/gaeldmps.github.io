@@ -1,0 +1,319 @@
+:root {
+    --bg-primary: rgb(10, 10, 10);
+    --accent-blue: rgb(0, 213, 255);
+    --accent-purple: rgb(162, 0, 255);
+    --text-primary: rgb(224, 224, 224);
+    --accent-red: rgb(255, 0, 0);
+    --highlight: rgb(255, 255, 255);
+}
+@font-face {
+    font-family: 'Titreh1';
+    src: url(./font/titre/Tektur-Bold.ttf);
+}
+@font-face {
+    font-family: 'Titreh2';
+    src: url(./font/titre/Tektur-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Titreh3';
+    src: url(./font/titre/Tektur_Condensed-Regular.ttf);
+}
+@font-face {
+    font-family: 'paragraphe';
+    src: url(./font/corps/Merienda-Regular.ttf);
+}
+@font-face {
+    font-family: 'bouton';
+    src: url(./font/corps/Merienda-SemiBold.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    position: relative;
+    /* Important pour le positionnement des éléments avec z-index */
+}
+h1{
+    font-family: 'Titreh1';
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+h2{
+    font-family: 'Titreh2';
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+h3{
+    font-family: 'Titreh3';
+    font-size: 2rem;
+    text-align: center;
+    width: 90%;
+    padding-top: 2rem;
+    margin: 0 5%;
+    height: 5rem;
+}
+p {
+    font-family: 'paragraphe';
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 1rem 5%;
+    text-align: center;
+};
+main {
+    position: relative;
+    z-index: 2;
+    /* Z-index supérieur pour ces éléments afin qu'ils se trouvent au-dessus du canvas */
+}
+
+
+/* ------------------------------------------------HEADER---------------------------------------------------------- */
+
+#header {
+    z-index: 3;
+    /* le header est au-dessus du canvas de particules */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding-top: 2rem;
+
+    a {
+        display: block;
+        width: fit-content;
+        padding: 1rem;
+        border: 2px solid var(--highlight);
+        border-radius: 1.5rem;
+        color: var(--text-primary);
+        text-decoration: none;
+        transition: .3s ease-in-out;
+        font-family: 'bouton';
+    }
+    a:hover{
+        scale: 1.2;
+    }
+
+
+    .monCV {
+        background: rgba(255, 0, 0, 0.5);
+    }
+    .monCV:hover {
+        background-color: rgba(255, 255, 255, .5);
+        color: rgb(10, 10, 10);
+        box-shadow: 0 0 2rem var(--accent-red), 0 0 4rem var(--accent-red);
+    }
+
+
+    .pages {
+        background: rgba(0, 213, 255, 0.5);
+    }
+
+    .pages:hover {
+        background-color: rgba(255, 255, 255, .5);
+        color: rgb(10, 10, 10);
+        box-shadow: 0 0 2rem var(--accent-blue), 0 0 4rem var(--accent-blue);
+    }
+
+
+    .hobbies {
+        background: rgba(162, 0, 255, 0.5);
+    }
+
+    .hobbies:hover {
+        background-color: rgba(255, 255, 255, .5);
+        color: rgb(10, 10, 10);
+        box-shadow: 0 0 2rem var(--accent-purple), 0 0 4rem var(--accent-purple);
+    }
+}
+
+
+
+.imageheader {
+    width: 5rem;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .5);
+    transition: .5s ease-in-out;
+}
+.imageheader:hover {
+    background-color: var(--highlight);
+    scale: 1.5;
+    rotate: 360deg;
+}
+
+/* -------------------------------------------------------SECTION PRÉSENTATION---------------------------------------- */
+
+
+
+/* -------------------------------------------------------SECTION MON CV---------------------------------------- */
+
+
+
+/* -------------------------------------------------------SECTION PROJETS---------------------------------------- */
+
+
+#projets {
+    z-index: 2;
+    /* Assurez-vous que la section des projets est aussi au-dessus */
+    margin: 3rem 0;
+}
+
+/* Canvas des particules */
+canvas {
+    z-index: 0;
+    /* Le canvas est en bas, derrière tout le contenu */
+}
+
+
+#projets {
+    max-width: 100%;
+    display: grid;
+    justify-content: space-around;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(2, auto);
+    text-align: center;
+}
+
+.articleprojets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+    border-radius: 50px;
+    /* Bleu avec 70% d'opacité */
+    background-color: rgba(0, 213, 255, 0.7);
+    margin: 2rem;
+    box-shadow: 0 0 2rem var(--accent-blue), 0 0 4rem var(--accent-blue);
+    img {
+        width: 90%;
+        height: auto;
+        border-radius: 20px
+    };
+    p {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    };
+    h3 {
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+    };
+}
+.button {
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 2px solid var(--text-primary);
+    border-radius: 1.5rem;
+    background: rgba(0, 0, 0, .5);
+    color: var(--highlight);
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    font-family: 'bouton';
+}
+
+.button:hover {
+    color: #0A0A0A;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 0 1rem var(--highlight);
+    scale: 1.2;
+}
+
+/* -----------------------------------------------------------ESCALADE----------------------------------------------------------------- */
+#escalade{
+    display: flex;
+    align-items: center;
+}
+
+#manga{
+    display: flex;
+    align-items: center;
+}
+
+#jeux{
+    display: flex;
+    align-items: center;
+}
+
+.position{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 3rem 10%;
+    padding: 3rem;
+    background-color: rgba(162, 0, 255, 0.7);
+    box-shadow: 0 0 2rem var(--accent-purple), 0 0 4rem  var(--accent-purple);
+    border-radius: 50px;
+}
+.slider{
+    max-width: 25%;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+.slider .slider-img{
+    display: flex;
+    align-items: center;
+    animation: slideresc 20s infinite ease-in-out;
+    text-align: center;
+}
+.slider-img img{
+    flex-shrink: 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+@keyframes slideresc {
+    0%,
+    15% {
+        transform: translateX(0);
+    }
+    20%,
+    35% {
+        transform: translateX(-100%);
+    }
+    40%,
+    55% {
+        transform: translateX(-200%);
+    }
+    60%,
+    75% {
+        transform: translateX(-300%);
+    }
+    80%,
+    95% {
+        transform: translateX(-400%);
+    }
+    100%{
+        transform: translateX(-500%);
+    }
+}
+
+/* -----------------------------------------------------------MANGA----------------------------------------------------------------- */
+
+
+/* Styles pour le cercle qui suit la souris */
+/* .mousemove {
+    height: 50px;
+    width: 50px;
+    border: 2px solid var(--accent-blue);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* Important pour permettre les clics à travers le cercle */
+/*
+    z-index: 1000;
+    background-color: transparent;
+    box-shadow: 0 0 300px 100px var(--accent-blue);
+    overflow: hidden;
+} */
