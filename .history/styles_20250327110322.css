@@ -158,7 +158,6 @@ main {
 #projets {
     z-index: 2;
     /* Assurez-vous que la section des projets est aussi au-dessus */
-    margin: 3rem 0;
 }
 
 /* Canvas des particules */
@@ -251,7 +250,7 @@ canvas {
     border-radius: 50px;
 }
 .slider{
-    max-width: 25%;
+    max-width: 20%;
     margin: 1rem auto;
     overflow: hidden;
 }

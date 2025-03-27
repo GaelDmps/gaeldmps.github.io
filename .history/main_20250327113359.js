@@ -232,9 +232,9 @@ function showescalade() {
 }
 
 
-function showjeux() {
+function showescalade() {
 
-  const displayjeux = document.getElementById('escalade')
+  const displayescalade = document.getElementById('escalade')
 
   displayescalade.innerHTML = ""
 

@@ -1,7 +1,7 @@
 :root {
     --bg-primary: rgb(10, 10, 10);
-    --accent-blue: rgb(0, 213, 255);
-    --accent-purple: rgb(162, 0, 255);
+    --accent-blue: rgb(0, 68, 255);
+    --accent-purple: rgb(60, 0, 201);
     --text-primary: rgb(224, 224, 224);
     --accent-red: rgb(255, 0, 0);
     --highlight: rgb(255, 255, 255);
@@ -108,7 +108,7 @@ main {
 
 
     .pages {
-        background: rgba(0, 213, 255, 0.5);
+        background: rgba(0, 68, 255, 0.5);
     }
 
     .pages:hover {
@@ -119,7 +119,7 @@ main {
 
 
     .hobbies {
-        background: rgba(162, 0, 255, 0.5);
+        background: rgba(60, 0, 201, 0.5);
     }
 
     .hobbies:hover {
@@ -158,7 +158,6 @@ main {
 #projets {
     z-index: 2;
     /* Assurez-vous que la section des projets est aussi au-dessus */
-    margin: 3rem 0;
 }
 
 /* Canvas des particules */
@@ -185,9 +184,9 @@ canvas {
     justify-content: space-between;    
     border-radius: 50px;
     /* Bleu avec 70% d'opacité */
-    background-color: rgba(0, 213, 255, 0.7);
+    background-color: rgba(0, 68, 255, 0.7);
     margin: 2rem;
-    box-shadow: 0 0 2rem var(--accent-blue), 0 0 4rem var(--accent-blue);
+    box-shadow: 0 0 2rem var(--accent-blue), 0 0 4rem var(--accent-purple);
     img {
         width: 90%;
         height: auto;
@@ -229,39 +228,29 @@ canvas {
 }
 
 /* -----------------------------------------------------------ESCALADE----------------------------------------------------------------- */
-#escalade{
-    display: flex;
-    align-items: center;
-}
-
-#manga{
-    display: flex;
-    align-items: center;
-}
-
-.position{
+.escposition{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 80%;
     margin: 3rem 10%;
     padding: 3rem;
-    background-color: rgba(162, 0, 255, 0.7);
-    box-shadow: 0 0 2rem var(--accent-purple), 0 0 4rem  var(--accent-purple);
+    background-color: rgba(60, 0, 201, 0.7);
+    box-shadow: 0 0 2rem var(--accent-purple), 0 0 4rem  var(--accent-blue);
     border-radius: 50px;
 }
-.slider{
-    max-width: 25%;
+.slider-escalade{
+    max-width: 20%;
     margin: 1rem auto;
     overflow: hidden;
 }
-.slider .slider-img{
+.slider-escalade .slider-escaladeimg{
     display: flex;
     align-items: center;
     animation: slideresc 20s infinite ease-in-out;
     text-align: center;
 }
-.slider-img img{
+.slider-escaladeimg img{
     flex-shrink: 0;
     width: 100%;
     height: auto;

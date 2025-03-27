@@ -231,64 +231,6 @@ function showescalade() {
 
 }
 
-
-function showjeux() {
-
-  const displayjeux = document.getElementById('escalade')
-
-  displayescalade.innerHTML = ""
-
-  for(const element of escalade){
-
-    const articleesc = document.createElement('article')
-    articleesc.classList.add('position')
-    displayescalade.appendChild(articleesc)
-
-    const divimages = document.createElement('div')
-    divimages.classList.add('slider')
-    articleesc.appendChild(divimages)
-    
-    const imgcontainer = document.createElement('div')
-    imgcontainer.classList.add('slider-img')
-    divimages.appendChild(imgcontainer)
-    
-    const imgescalade1 = document.createElement('img')
-    imgescalade1.src = element.image1
-    imgcontainer.appendChild(imgescalade1)
-    
-    const imgescalade2 = document.createElement('img')
-    imgescalade2.src = element.image2
-    imgcontainer.appendChild(imgescalade2)
-    
-    const imgescalade3 = document.createElement('img')
-    imgescalade3.src = element.image3
-    imgcontainer.appendChild(imgescalade3)
-    
-    const imgescalade4 = document.createElement('img')
-    imgescalade4.src = element.image4
-    imgcontainer.appendChild(imgescalade4)
-
-    const imgescalade5 = document.createElement('img')
-    imgescalade5.src = element.image5
-    imgcontainer.appendChild(imgescalade5)
-    
-    const imgescaladeretour = document.createElement('img')
-    imgescaladeretour.src = element.image1
-    imgcontainer.appendChild(imgescaladeretour)
-
-    const group = document.createElement('hgroup')
-    articleesc.appendChild(group)
-
-    const esctitre = document.createElement('h2')
-    esctitre.innerText = element.titre
-    group.appendChild(esctitre)
-
-    const esccommentaire = document.createElement('p')
-    esccommentaire.innerText = element.commentaire
-    group.appendChild(esccommentaire)
-  }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
 
    // Animation des particules

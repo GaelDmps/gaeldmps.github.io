@@ -56,7 +56,7 @@ const escalade = [
     commentaire: "Je me suis mit a l'escalade avec mon meilleur ami et j'ai vite accroché au point d'en faire jusqu'à 12 heures par semaine quand j'étais a l'université. Depuis que j'y suis plus je vais a la grande salle de Besançon quand je peux."
 }]
 
-// création de la deuxième partie de la section passions --> la div manga
+// création de la première partie de la section passions --> la div escalade
 const manga = [
   {
     image1: "./img/manga/carnets-tom-14.JPG",
@@ -67,18 +67,6 @@ const manga = [
     titre: "Les manga",
     commentaire: "Depuis quelques années j'adore les manga, lire tome après tome et découvrir les avecnturs des personnages que j'adore. Que ça soit du combat, de l'aventure, ou juste tout calme et plein de réflexion j'aime tout type d'histoire et si je suis pris dedans je peux lire jusqu'a un tome en une heure donc tout lire en une journée si je veux. Les dessins d'artistes tous aussi talentueux les uns que les autres me font plonger dasn leur univers j'aime cette sensation de liberté quand je lis."
 }]
-
-const jeux = [
-  {
-    image1: "./img/jeux/auto-craft.png",
-    image2: "./img/jeux/horreur-1.png",
-    image3: "./img/jeux/horreur-2.png",
-    image4: "./img/jeux/subnautica-1.jpg",
-    image5: "./img/jeux/subnautica.jpg",
-    titre: "Les Jeux vidéo",
-    commentaire: "Quand j'étais petit je jouais sur la Wii et maintenant je joue encore mais sur un ordinateur monté par mes soins et assez performant pour faire tourner plein de jeux comme ARK, Cyberpunk, Minecraft avec des mods par dizaines, Subnautica et plein d'autres. Les osirées jeux entre amis j'aodre ça qu'on joue a des jeux droles comme Lethal company ou des jeux plus calmes mais tout aussi droles en multi comme Minecraft. J¨Les jeux vidéo m'ont fait grandir et m'ont permi de profiter de moments inoubliables avec mes amis."
-}]
-
 
 function showprojects() {
 
@@ -180,113 +168,54 @@ function showescalade() {
   
     for(const element of manga){
   
-      const articlemanga = document.createElement('article')
-      articlemanga.classList.add('position')
-      displaymanga.appendChild(articlemanga)
-
-      const group = document.createElement('hgroup')
-      articlemanga.appendChild(group)
-  
-      const mangatitre = document.createElement('h2')
-      mangatitre.innerText = element.titre
-      group.appendChild(mangatitre)
-  
-      const mangacommentaire = document.createElement('p')
-      mangacommentaire.innerText = element.commentaire
-      group.appendChild(mangacommentaire)
+      const articleesc = document.createElement('article')
+      articleesc.classList.add('position')
+      displayescalade.appendChild(articleesc)
   
       const divimages = document.createElement('div')
       divimages.classList.add('slider')
-      articlemanga.appendChild(divimages)
+      articleesc.appendChild(divimages)
       
       const imgcontainer = document.createElement('div')
       imgcontainer.classList.add('slider-img')
       divimages.appendChild(imgcontainer)
       
-      const imgmanga1 = document.createElement('img')
-      imgmanga1.src = element.image1
-      imgcontainer.appendChild(imgmanga1)
+      const imgescalade1 = document.createElement('img')
+      imgescalade1.src = element.image1
+      imgcontainer.appendChild(imgescalade1)
       
-      const imgmanga2 = document.createElement('img')
-      imgmanga2.src = element.image2
-      imgcontainer.appendChild(imgmanga2)
+      const imgescalade2 = document.createElement('img')
+      imgescalade2.src = element.image2
+      imgcontainer.appendChild(imgescalade2)
       
-      const imgmanga3 = document.createElement('img')
-      imgmanga3.src = element.image3
-      imgcontainer.appendChild(imgmanga3)
+      const imgescalade3 = document.createElement('img')
+      imgescalade3.src = element.image3
+      imgcontainer.appendChild(imgescalade3)
       
-      const imgmanga4 = document.createElement('img')
-      imgmanga4.src = element.image4
-      imgcontainer.appendChild(imgmanga4)
+      const imgescalade4 = document.createElement('img')
+      imgescalade4.src = element.image4
+      imgcontainer.appendChild(imgescalade4)
   
-      const imgmanga5 = document.createElement('img')
-      imgmanga5.src = element.image5
-      imgcontainer.appendChild(imgmanga5)
+      const imgescalade5 = document.createElement('img')
+      imgescalade5.src = element.image5
+      imgcontainer.appendChild(imgescalade5)
       
-      const imgmangaretour = document.createElement('img')
-      imgmangaretour.src = element.image1
-      imgcontainer.appendChild(imgmangaretour)
+      const imgescaladeretour = document.createElement('img')
+      imgescaladeretour.src = element.image1
+      imgcontainer.appendChild(imgescaladeretour)
   
+      const group = document.createElement('hgroup')
+      articleesc.appendChild(group)
+  
+      const esctitre = document.createElement('h2')
+      esctitre.innerText = element.titre
+      group.appendChild(esctitre)
+  
+      const esccommentaire = document.createElement('p')
+      esccommentaire.innerText = element.commentaire
+      group.appendChild(esccommentaire)
     }
 
-}
-
-
-function showjeux() {
-
-  const displayjeux = document.getElementById('escalade')
-
-  displayescalade.innerHTML = ""
-
-  for(const element of escalade){
-
-    const articleesc = document.createElement('article')
-    articleesc.classList.add('position')
-    displayescalade.appendChild(articleesc)
-
-    const divimages = document.createElement('div')
-    divimages.classList.add('slider')
-    articleesc.appendChild(divimages)
-    
-    const imgcontainer = document.createElement('div')
-    imgcontainer.classList.add('slider-img')
-    divimages.appendChild(imgcontainer)
-    
-    const imgescalade1 = document.createElement('img')
-    imgescalade1.src = element.image1
-    imgcontainer.appendChild(imgescalade1)
-    
-    const imgescalade2 = document.createElement('img')
-    imgescalade2.src = element.image2
-    imgcontainer.appendChild(imgescalade2)
-    
-    const imgescalade3 = document.createElement('img')
-    imgescalade3.src = element.image3
-    imgcontainer.appendChild(imgescalade3)
-    
-    const imgescalade4 = document.createElement('img')
-    imgescalade4.src = element.image4
-    imgcontainer.appendChild(imgescalade4)
-
-    const imgescalade5 = document.createElement('img')
-    imgescalade5.src = element.image5
-    imgcontainer.appendChild(imgescalade5)
-    
-    const imgescaladeretour = document.createElement('img')
-    imgescaladeretour.src = element.image1
-    imgcontainer.appendChild(imgescaladeretour)
-
-    const group = document.createElement('hgroup')
-    articleesc.appendChild(group)
-
-    const esctitre = document.createElement('h2')
-    esctitre.innerText = element.titre
-    group.appendChild(esctitre)
-
-    const esccommentaire = document.createElement('p')
-    esccommentaire.innerText = element.commentaire
-    group.appendChild(esccommentaire)
-  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -375,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   showprojects()
   showescalade()
-  showmanga()
+
 
 
 

@@ -251,7 +251,7 @@ canvas {
     border-radius: 50px;
 }
 .slider{
-    max-width: 25%;
+    max-width: 20%;
     margin: 1rem auto;
     overflow: hidden;
 }

@@ -158,7 +158,6 @@ main {
 #projets {
     z-index: 2;
     /* Assurez-vous que la section des projets est aussi au-dessus */
-    margin: 3rem 0;
 }
 
 /* Canvas des particules */
@@ -187,7 +186,7 @@ canvas {
     /* Bleu avec 70% d'opacité */
     background-color: rgba(0, 213, 255, 0.7);
     margin: 2rem;
-    box-shadow: 0 0 2rem var(--accent-blue), 0 0 4rem var(--accent-blue);
+    box-shadow: 0 0 2rem var(--accent-blue), 0 0 4rem var(--accent-purple);
     img {
         width: 90%;
         height: auto;
@@ -234,11 +233,6 @@ canvas {
     align-items: center;
 }
 
-#manga{
-    display: flex;
-    align-items: center;
-}
-
 .position{
     display: flex;
     justify-content: space-around;
@@ -251,7 +245,7 @@ canvas {
     border-radius: 50px;
 }
 .slider{
-    max-width: 25%;
+    max-width: 20%;
     margin: 1rem auto;
     overflow: hidden;
 }
