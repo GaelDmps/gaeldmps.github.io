@@ -39,7 +39,7 @@ h1{
     font-family: 'Titreh1';
     font-size: 4rem;
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
 }
 h2{
     font-family: 'Titreh2';
@@ -152,7 +152,7 @@ main {
     max-width: 80%;
     margin: 0 10% 2rem 10%;
     border-radius: 50px;
-    padding: 0.5rem 0;
+    padding-bottom: 1rem;
 }
 
 /* -------------------------------------------------------SECTION PROJETS---------------------------------------- */

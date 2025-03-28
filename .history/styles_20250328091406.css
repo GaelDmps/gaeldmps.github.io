@@ -39,7 +39,7 @@ h1{
     font-family: 'Titreh1';
     font-size: 4rem;
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
 }
 h2{
     font-family: 'Titreh2';
@@ -149,10 +149,6 @@ main {
 #section1{
     background-color: rgba(255, 0, 0, 0.7);
     box-shadow: 0 0 2rem var(--accent-red), 0 0 4rem var(--accent-red);
-    max-width: 80%;
-    margin: 0 10% 2rem 10%;
-    border-radius: 50px;
-    padding: 0.5rem 0;
 }
 
 /* -------------------------------------------------------SECTION PROJETS---------------------------------------- */
