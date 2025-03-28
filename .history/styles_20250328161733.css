@@ -306,7 +306,7 @@ canvas {
 }
 .slider-img img{
     flex-shrink: 0;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     border-radius: 30px;
 }
@@ -317,22 +317,22 @@ canvas {
     }
     20%,
     35% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
     40%,
     55% {
-        transform: translateX(-200%);
+        transform: translateX(-100%);
     }
     60%,
     75% {
-        transform: translateX(-300%);
+        transform: translateX(-150%);
     }
     80%,
     95% {
-        transform: translateX(-400%);
+        transform: translateX(-200%);
     }
     100%{
-        transform: translateX(-500%);
+        transform: translateX(-250%);
     }
 }
 

@@ -192,7 +192,7 @@ function showescalade() {
     for(const element of manga){
   
       const articlemanga = document.createElement('article')
-      articlemanga.classList.add('position-inverse')
+      articlemanga.classList.add('position')
       displaymanga.appendChild(articlemanga)
 
       const group = document.createElement('hgroup')
@@ -310,7 +310,7 @@ function showjeux() {
   for(const element of jeux){
 
     const articlejeux = document.createElement('article')
-    articlejeux.classList.add('position-inverse')
+    articlejeux.classList.add('position')
     displayjeux.appendChild(articlejeux)
     
     const group = document.createElement('hgroup')
@@ -360,85 +360,95 @@ function showjeux() {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-   // Animation des particules
+// Animation des particules
 
-  // Création de l'élément canvas
+// Création de l'élément canvas
+const canvas = document.createElement('canvas');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+canvas.style.position = 'fixed';
+canvas.style.top = '0';
+canvas.style.left = '0';
+canvas.style.zIndex = '-1'; // placé a -1 pour passer sous le contenu
+canvas.style.pointerEvents = 'none'; // Ceci assure que les clics passent à travers vers les éléments en dessous 
+document.body.appendChild(canvas);
 
-  const canvas = document.createElement('canvas');
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  canvas.style.position = 'fixed';
-  canvas.style.top = '0';
-  canvas.style.left = '0';
-  canvas.style.zIndex = '-1'; // placé a -1 pour passer sous le contenu
-  canvas.style.pointerEvents = 'none'; // Ceci assure que les clics passent à travers vers les éléments en dessous 
-  document.body.appendChild(canvas);
+const ctx = canvas.getContext('2d');
 
-  const ctx = canvas.getContext('2d');
+// Palette de couleurs tropicales
+const tropicalColors = [
+    'rgb(0, 255, 127)',     // Vert tropical vif (Titres)
+    'rgb(255, 69, 0)',      // Orange corail (Titres-Articles)
+    'rgb(26, 188, 156)',    // Turquoise lagon (Fond-de-Page)
+    'rgb(255, 140, 0)',     // Orange mangue (Boutons)
+    'rgb(0, 191, 255)'      // Bleu vif des liens
+];
 
-  // Classe Particule
-  class Particle {
+// Classe Particule
+class Particle {
     constructor() {
-      this.x = Math.random() * canvas.width;
-      this.y = Math.random() * canvas.height;
-      this.size = Math.random() * 3 + 1;
-      this.speedX = Math.random() * 1 - 0.5;
-      this.speedY = Math.random() * 1 - 0.5;
-      this.color = 'rgba(11, 147, 15)';
-      this.shadowColor = 'rgba(11, 147, 15), 0.5)'; // Ombre de la même couleur que la particule
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 3 + 1;
+        this.speedX = Math.random() * 1 - 0.5;
+        this.speedY = Math.random() * 1 - 0.5;
+        
+        // Sélection aléatoire d'une couleur
+        this.color = tropicalColors[Math.floor(Math.random() * tropicalColors.length)];
+        
+        // Ombre légèrement assombrie de la couleur
+        this.shadowColor = this.color.replace(')', ', 0.5)').replace('rgb', 'rgba');
     }
 
     update() {
-      this.x += this.speedX;
-      this.y += this.speedY;
+        this.x += this.speedX;
+        this.y += this.speedY;
 
-      // Réapparition de l'autre côté de l'écran
-      if (this.x < 0) this.x = canvas.width;
-      if (this.x > canvas.width) this.x = 0;
-      if (this.y < 0) this.y = canvas.height;
-      if (this.y > canvas.height) this.y = 0;
+        // Réapparition de l'autre côté de l'écran
+        if (this.x < 0) this.x = canvas.width;
+        if (this.x > canvas.width) this.x = 0;
+        if (this.y < 0) this.y = canvas.height;
+        if (this.y > canvas.height) this.y = 0;
     }
 
     draw() {
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-      ctx.fillStyle = this.color;
-      ctx.fill();
-
-      // Ajouter l'ombre à la particule
-      ctx.shadowColor = this.shadowColor;
-      ctx.shadowBlur = 10; // Intensité de l'ombre
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.shadowColor = this.shadowColor;
+        ctx.shadowBlur = 10; // Intensité de l'ombre
+        ctx.fill();
     }
-  }
+}
 
-  // Création des particules
-  const particles = [];
-  const numberOfParticles = 200;
+// Création des particules
+const particles = [];
+const numberOfParticles = 200;
 
-  for (let i = 0; i < numberOfParticles; i++) {
+for (let i = 0; i < numberOfParticles; i++) {
     particles.push(new Particle());
-  }
+}
 
-  // Boucle d'animation
-  function animate() {
+// Boucle d'animation
+function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     for (let i = 0; i < particles.length; i++) {
-      particles[i].update();
-      particles[i].draw();
+        particles[i].update();
+        particles[i].draw();
     }
 
     requestAnimationFrame(animate);
-  }
+}
 
-  // Gestion du redimensionnement de la fenêtre
-  window.addEventListener('resize', () => {
+// Gestion du redimensionnement de la fenêtre
+window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-  });
+});
 
-  // Démarrage de l'animation
-  animate();
+// Démarrage de l'animation
+animate();
 
 // Appel des fonctions qui affichent les différentes parties de la page
 

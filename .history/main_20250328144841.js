@@ -192,7 +192,7 @@ function showescalade() {
     for(const element of manga){
   
       const articlemanga = document.createElement('article')
-      articlemanga.classList.add('position-inverse')
+      articlemanga.classList.add('position')
       displaymanga.appendChild(articlemanga)
 
       const group = document.createElement('hgroup')
@@ -310,7 +310,7 @@ function showjeux() {
   for(const element of jeux){
 
     const articlejeux = document.createElement('article')
-    articlejeux.classList.add('position-inverse')
+    articlejeux.classList.add('position')
     displayjeux.appendChild(articlejeux)
     
     const group = document.createElement('hgroup')
@@ -384,9 +384,46 @@ document.addEventListener('DOMContentLoaded', () => {
       this.size = Math.random() * 3 + 1;
       this.speedX = Math.random() * 1 - 0.5;
       this.speedY = Math.random() * 1 - 0.5;
-      this.color = 'rgba(11, 147, 15)';
-      this.shadowColor = 'rgba(11, 147, 15), 0.5)'; // Ombre de la même couleur que la particule
+      
+      // Palette de couleurs tropicales
+      const tropicalColors = [
+        'rgb(0, 255, 127)',     // Vert tropical vif (Titres)
+        'rgb(255, 69, 0)',      // Orange corail (Titres-Articles)
+        'rgb(26, 188, 156)',    // Turquoise lagon (Fond-de-Page)
+        'rgb(255, 140, 0)',     // Orange mangue (Boutons)
+        'rgb(0, 191, 255)'      // Bleu vif des liens
+      ];
+      
+      // Sélection aléatoire d'une couleur
+      this.color = tropicalColors[Math.floor(Math.random() * tropicalColors.length)];
+      
+      // Ombre légèrement assombrie de la couleur
+      this.shadowColor = this.color.replace(')', ', 0.5)').replace('rgb', 'rgba');
     }
+
+    // Le reste de votre code original reste exactement pareil
+    update() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+
+      // Réapparition de l'autre côté de l'écran
+      if (this.x < 0) this.x = canvas.width;
+      if (this.x > canvas.width) this.x = 0;
+      if (this.y < 0) this.y = canvas.height;
+      if (this.y > canvas.height) this.y = 0;
+    }
+
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = this.color;
+      ctx.fill();
+
+      // Ajouter l'ombre à la particule
+      ctx.shadowColor = this.shadowColor;
+      ctx.shadowBlur = 10; // Intensité de l'ombre
+    }
+}
 
     update() {
       this.x += this.speedX;

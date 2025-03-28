@@ -192,7 +192,7 @@ function showescalade() {
     for(const element of manga){
   
       const articlemanga = document.createElement('article')
-      articlemanga.classList.add('position-inverse')
+      articlemanga.classList.add('position')
       displaymanga.appendChild(articlemanga)
 
       const group = document.createElement('hgroup')
@@ -310,7 +310,7 @@ function showjeux() {
   for(const element of jeux){
 
     const articlejeux = document.createElement('article')
-    articlejeux.classList.add('position-inverse')
+    articlejeux.classList.add('position')
     displayjeux.appendChild(articlejeux)
     
     const group = document.createElement('hgroup')

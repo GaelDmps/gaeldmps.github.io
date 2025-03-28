@@ -306,7 +306,7 @@ canvas {
 }
 .slider-img img{
     flex-shrink: 0;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     border-radius: 30px;
 }

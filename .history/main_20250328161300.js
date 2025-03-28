@@ -192,7 +192,7 @@ function showescalade() {
     for(const element of manga){
   
       const articlemanga = document.createElement('article')
-      articlemanga.classList.add('position-inverse')
+      articlemanga.classList.add('position')
       displaymanga.appendChild(articlemanga)
 
       const group = document.createElement('hgroup')

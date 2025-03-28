@@ -192,7 +192,7 @@ function showescalade() {
     for(const element of manga){
   
       const articlemanga = document.createElement('article')
-      articlemanga.classList.add('position-inverse')
+      articlemanga.classList.add('position')
       displaymanga.appendChild(articlemanga)
 
       const group = document.createElement('hgroup')
@@ -310,7 +310,7 @@ function showjeux() {
   for(const element of jeux){
 
     const articlejeux = document.createElement('article')
-    articlejeux.classList.add('position-inverse')
+    articlejeux.classList.add('position')
     displayjeux.appendChild(articlejeux)
     
     const group = document.createElement('hgroup')
@@ -384,8 +384,8 @@ document.addEventListener('DOMContentLoaded', () => {
       this.size = Math.random() * 3 + 1;
       this.speedX = Math.random() * 1 - 0.5;
       this.speedY = Math.random() * 1 - 0.5;
-      this.color = 'rgba(11, 147, 15)';
-      this.shadowColor = 'rgba(11, 147, 15), 0.5)'; // Ombre de la même couleur que la particule
+      this.color = 'rgba(0, 255, 127)';
+      this.shadowColor = 'rgba(, 0.5)'; // Ombre de la même couleur que la particule
     }
 
     update() {
