@@ -341,3 +341,19 @@ canvas {
 }
 
 
+/* Styles pour le cercle qui suit la souris */
+/* .mousemove {
+    height: 50px;
+    width: 50px;
+    border: 2px solid var(--accent-blue);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* Important pour permettre les clics à travers le cercle */
+/*
+    z-index: 1000;
+    background-color: transparent;
+    box-shadow: 0 0 300px 100px var(--accent-blue);
+    overflow: hidden;
+} */
