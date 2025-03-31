@@ -211,13 +211,13 @@ canvas {
         display: flex;
         align-items: center;
         text-align: center;
-        padding-bottom: 1rem;
+        padding: 1rem;
     };
     h3 {
         text-align: center;
         width: 100%;
+        padding: 1rem;
         margin: 0;
-        padding-bottom: 1rem;
     };
 }
 .button {
@@ -341,29 +341,13 @@ canvas {
         grid-template-columns: repeat(2, 45%);
         gap: 2rem;
     }
-    header{
-        flex-direction: column;
-        a{margin: 1rem;}
-    }
 }
 
 @media (max-width: 425px) {
-    #projets{
+    #projets {
         grid-template-columns: 1fr;
         gap: 2rem;
         margin: 2rem 0;
     }
-    h1{
-        font-size: 3rem;
-    }
-    h2{
-        font-size: 2rem;
-    }
-    h3{
-        font-size: 1.5rem;
-        max-width: 90%;
-    }
-    p {
-        font-size: 1rem;
-    }
 }
+

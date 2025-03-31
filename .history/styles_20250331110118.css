@@ -337,22 +337,17 @@ canvas {
 }
 
 @media (max-width: 768px) {
-    #projets {
-        grid-template-columns: repeat(2, 45%);
-        gap: 2rem;
-    }
     header{
         flex-direction: column;
         a{margin: 1rem;}
     }
+    #projets {
+        grid-template-columns: repeat(2, 45%);
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 425px) {
-    #projets{
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        margin: 2rem 0;
-    }
     h1{
         font-size: 3rem;
     }
@@ -361,9 +356,14 @@ canvas {
     }
     h3{
         font-size: 1.5rem;
-        max-width: 90%;
     }
     p {
         font-size: 1rem;
-    }
+    };
+    /* #projets {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 2rem 0;
+    } */
 }
+
