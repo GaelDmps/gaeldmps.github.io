@@ -37,7 +37,6 @@ body {
     position: relative;
     margin: 0;
     background-image: url(img/fond/fond-feuilles.png);
-    background-attachment: fixed;
 }
 h1{
     font-family: 'Titreh1';

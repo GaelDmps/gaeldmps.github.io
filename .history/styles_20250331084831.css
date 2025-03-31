@@ -36,8 +36,7 @@ body {
     color: var(--Texte-Principal);
     position: relative;
     margin: 0;
-    background-image: url(img/fond/fond-feuilles.png);
-    background-attachment: fixed;
+    /* Important pour le positionnement des éléments avec z-index */
 }
 h1{
     font-family: 'Titreh1';
@@ -85,7 +84,7 @@ main {
     margin: 0 0 5rem 0;
     padding-top: 2rem;
     padding-bottom: 5rem;
-
+    background-image: url();
 
 
     a {
