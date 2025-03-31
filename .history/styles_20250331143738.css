@@ -339,10 +339,12 @@ canvas {
 
 /* --------------------------------------------------------------------FOOTER----------------------------------------------- */
 footer{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 3rem;
-}
+    .footer-buttons{
+        display: grid;
+        grid grid-template-columns: (3fr, 30%);
+        grid-template-rows: repeat(2) ;
+    }
+
 
 @media (max-width: 768px) {
     #projets{

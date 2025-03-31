@@ -337,13 +337,6 @@ canvas {
     }
 }
 
-/* --------------------------------------------------------------------FOOTER----------------------------------------------- */
-footer{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 3rem;
-}
-
 @media (max-width: 768px) {
     #projets{
         grid-template-columns: 1fr;
@@ -365,6 +358,7 @@ footer{
     .slider{
         max-width: 100%;
     }
+}
 }
 
 @media (max-width: 425px) {

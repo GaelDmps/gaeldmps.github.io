@@ -340,8 +340,12 @@ canvas {
 /* --------------------------------------------------------------------FOOTER----------------------------------------------- */
 footer{
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 3rem;
+    justify-content: space-between;
+
+    .footer-buttons{
+    display: flex;
+    justify-content: space-between;
+    }
 }
 
 @media (max-width: 768px) {

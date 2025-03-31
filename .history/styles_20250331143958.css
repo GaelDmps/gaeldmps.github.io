@@ -341,7 +341,6 @@ canvas {
 footer{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 3rem;
 }
 
 @media (max-width: 768px) {

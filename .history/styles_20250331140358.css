@@ -337,19 +337,11 @@ canvas {
     }
 }
 
-/* --------------------------------------------------------------------FOOTER----------------------------------------------- */
-footer{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 3rem;
-}
-
 @media (max-width: 768px) {
     #projets{
         grid-template-columns: 1fr;
         gap: 2rem;
         margin: 2rem 0;
-    }
     header{
         flex-direction: column;
         a{margin: 1rem;}
@@ -366,8 +358,10 @@ footer{
         max-width: 100%;
     }
 }
+}
 
 @media (max-width: 425px) {
+
     h1{
         font-size: 3rem;
     }

@@ -337,18 +337,10 @@ canvas {
     }
 }
 
-/* --------------------------------------------------------------------FOOTER----------------------------------------------- */
-footer{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 3rem;
-}
-
 @media (max-width: 768px) {
-    #projets{
-        grid-template-columns: 1fr;
+    #projets {
+        grid-template-columns: repeat(2, 45%);
         gap: 2rem;
-        margin: 2rem 0;
     }
     header{
         flex-direction: column;
@@ -368,6 +360,11 @@ footer{
 }
 
 @media (max-width: 425px) {
+    #projets{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
     h1{
         font-size: 3rem;
     }
@@ -384,8 +381,8 @@ footer{
     #section2{
         h2{
             width: 90%;
-            margin: 0rem 5%;
-            padding-top: 3rem;
+            margin: 1rem 5%;
+            padding-top: 1rem;
         }
     }
 }
