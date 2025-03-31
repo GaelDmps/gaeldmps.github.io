@@ -326,7 +326,7 @@ canvas {
     border-radius: 50px;
 }
 .slider{
-    max-width: 35%;
+    max-width: 50%;
     margin: 1rem auto;
     overflow: hidden;
 }
@@ -338,7 +338,7 @@ canvas {
 }
 .slider-img img{
     flex-shrink: 0;
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     border-radius: 30px;
 }

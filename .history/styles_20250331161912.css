@@ -326,7 +326,7 @@ canvas {
     border-radius: 50px;
 }
 .slider{
-    max-width: 35%;
+    max-width: 50%;
     margin: 1rem auto;
     overflow: hidden;
 }
@@ -398,9 +398,7 @@ footer{
     }
     footer{
         flex-direction: column;
-        a{
-            margin: 1rem;
-        }
+        
     }
 }
 
