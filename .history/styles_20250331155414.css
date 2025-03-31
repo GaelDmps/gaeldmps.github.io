@@ -171,7 +171,10 @@ main {
 /* -------------------------------------------------------SECTION PROJETS---------------------------------------- */
 
 #section2{
+    background: var(--Fond-des-Sections);
+    box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
     max-width: 90%;
+    border-radius: 50px;
     margin:10rem 5% 5rem 5%;
 }
 #projets {
@@ -184,6 +187,8 @@ main {
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(2, auto);
     text-align: center;
+    background: var(--Fond-des-Sections);
+    box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
 }
 
 .boutons-projets {
@@ -224,9 +229,7 @@ canvas {
     border-radius: 50px;
     /* Bleu avec 70% d'opacité */
     margin: 2rem;
-    border-radius: 50px;
-    background: var(--Fond-des-Sections);
-    box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
+    box-shadow: 0 0 2rem var(--Fond-de-Page), 0 0 4rem var(--Fond-de-Page);
     img {
         width: 90%;
         height: auto;

@@ -53,7 +53,7 @@ const escalade = [
     image4: "./img/escalade/suspendu.jpg",
     image5: "./img/escalade/suspendu-2.jpg",
     titre: "Ma passion sport : l'escalade",
-    commentaire: "Je me suis mit a l'escalade avec mon meilleur ami et j'ai vite accroché au point d'en faire jusqu'à 12 heures par semaine quand j'étais a l'université. Depuis que j'y suis plus je vais a la grande salle de ma ville quand je peux. J'aime la sensation de grimper pour dépasser ses limites et choisir des voies toujours plus compliquées que les précédentes, la sensation de sauter pour atteindre une prise même si il y a des chances de tomber et ne pas l'attraper du premier coup. Je vais tout faire pour y retourner un maximum et retrouver cette sensation d'accomplissement une fois tout en haut des voies."
+    commentaire: "Je me suis mit a l'escalade avec mon meilleur ami et j'ai vite accroché au point d'en faire jusqu'à 12 heures par semaine quand j'étais a l'université. Depuis que j'y suis plus je vais a la grande salle de Besançon quand je peux."
 }]
 
 // création de la deuxième partie de la section passions --> la div manga

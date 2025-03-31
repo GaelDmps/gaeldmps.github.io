@@ -53,7 +53,7 @@ const escalade = [
     image4: "./img/escalade/suspendu.jpg",
     image5: "./img/escalade/suspendu-2.jpg",
     titre: "Ma passion sport : l'escalade",
-    commentaire: "Je me suis mit a l'escalade avec mon meilleur ami et j'ai vite accroché au point d'en faire jusqu'à 12 heures par semaine quand j'étais a l'université. Depuis que j'y suis plus je vais a la grande salle de ma ville quand je peux. J'aime la sensation de grimper pour dépasser ses limites et choisir des voies toujours plus compliquées que les précédentes, la sensation de sauter pour atteindre une prise même si il y a des chances de tomber et ne pas l'attraper du premier coup. Je vais tout faire pour y retourner un maximum et retrouver cette sensation d'accomplissement une fois tout en haut des voies."
+    commentaire: "Je me suis mit a l'escalade avec mon meilleur ami et j'ai vite accroché au point d'en faire jusqu'à 12 heures par semaine quand j'étais a l'université. Depuis que j'y suis plus je vais a la grande salle de Besançon quand je peux."
 }]
 
 // création de la deuxième partie de la section passions --> la div manga
@@ -92,11 +92,11 @@ const jeux = [
 
 const lego = [
   {
-    image1: "./img/lego/camera-lego.png",
-    image2: "./img/lego/fleur.jpg",
-    image3: "./img/lego/lego-marvel.jpg",
-    image4: "./img/lego/pots1.jpg",
-    image5: "./img/lego/roses.jpg",
+    image1: "./img/camera-lego.png",
+    image2: "./img/fleur.jpg",
+    image3: "./img/lego-marvel.jpg",
+    image4: "./img/pots1.jpg",
+    image5: "./img/roses.jpg",
     titre: "Les Lego",
     commentaire: "Les Lego je trouve ça incroyable, j'en ai une collection qui grandit depuis que je suis tout petit. J'ai grandi avec des briques de Lego dans les mains j'ai d'abord eu les City avec les pompiers et la police, puis les lego Marvel avec les super héros et plus récemment les plantes pour décorer mon appartement. Tout est très bien conçu et les détails qu'ils arrivent a donner est incroyable. J'ai hâte de voir ce que Lego va prévoir dans les années a venir."
 }]
@@ -374,8 +374,8 @@ function showlego() {
 
   for(const element of lego){
 
-    const articlelego = document.createElement('article')
-    articlelego.classList.add('position')
+    const articlejeux = document.createElement('article')
+    articlelego.classList.add('position-lego')
     displaylego.appendChild(articlelego)
     
     const group = document.createElement('hgroup')
@@ -512,7 +512,6 @@ document.addEventListener('DOMContentLoaded', () => {
   showmanga()
   showsetup()  
   showjeux()
-  showlego()
 
 
 

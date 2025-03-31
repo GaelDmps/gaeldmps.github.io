@@ -171,8 +171,11 @@ main {
 /* -------------------------------------------------------SECTION PROJETS---------------------------------------- */
 
 #section2{
+    background: var(--Fond-des-Sections);
+    border-radius: 50px;
     max-width: 90%;
     margin:10rem 5% 5rem 5%;
+    box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
 }
 #projets {
     z-index: 2;/* Assurez-vous que la section des projets est aussi au-dessus */
@@ -224,9 +227,7 @@ canvas {
     border-radius: 50px;
     /* Bleu avec 70% d'opacité */
     margin: 2rem;
-    border-radius: 50px;
-    background: var(--Fond-des-Sections);
-    box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
+    box-shadow: 0 0 2rem var(--Fond-de-Page), 0 0 4rem var(--Fond-de-Page);
     img {
         width: 90%;
         height: auto;
@@ -273,11 +274,11 @@ canvas {
     /* box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections); */
     max-width: 90%;
     margin:10rem 5% 5rem 5%;
-}
-.title{
-    background: var(--Fond-des-Sections);
-    box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
-     border-radius: 50px;
+    border-radius: 50px;
+    h2{
+        background: var(--Fond-des-Sections);
+        box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
+    }
 }
 #escalade{
     display: flex;
