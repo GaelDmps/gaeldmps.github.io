@@ -345,16 +345,10 @@ canvas {
         flex-direction: column;
         a{margin: 1rem;}
     }
-    .position{
-        flex-direction: column-reverse;
-        margin: 3rem 10%;
-    }
-    .position-inverse{
-        flex-direction: column;
-        margin: 3rem 10%;
-    }
-    .slider{
-        max-width: 100%;
+    #section3{
+        #escalade{
+         flex-direction: column-reverse;   
+        }
     }
 }
 
