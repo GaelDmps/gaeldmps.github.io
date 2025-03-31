@@ -115,7 +115,6 @@ main {
 
     .pages {
         background: var(--Boutons);
-        color: var(--Texte-Boutons);
     }
 
     .pages:hover {
@@ -127,7 +126,6 @@ main {
 
     .hobbies {
         background: var(--Boutons);
-        color: var(--Texte-Boutons);
     }
 
     .hobbies:hover {
@@ -233,14 +231,14 @@ canvas {
     border: 2px solid var(--Boutons-bordure);
     border-radius: 1.5rem;
     background: var(--Boutons);
-    color: var(--Texte-Boutons);
+    color: var(--Texte-Principal);
     text-decoration: none;
     transition: .3s ease-in-out;
     font-family: 'bouton';
 }
 
 .button:hover {
-    color: var(--Texte-Principal);
+    color: #0A0A0A;
     background-color: var(--Boutons-hover);
     box-shadow: 0 0 2rem var(--Boutons-hover), 0 0 4rem var(--Boutons-hover);
     scale: 1.2;
