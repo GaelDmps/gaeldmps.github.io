@@ -1,13 +1,11 @@
 :root {
     --Texte-Principal: rgb(34, 47, 62);        /* Gris profond, comme une pierre de lave */
-    --Titres: rgb(0, 255, 127);                /* Vert tropical vif, comme les feuilles de palmier */
-    --Titres-Articles: rgb(255, 69, 0);        /* Orange corail audacieux */
-    --Fond-de-Page: rgb(10, 106, 14);         /* Turquoise lagon tropical */
+    --Fond-de-Page: rgb(10, 68, 12);         /* Turquoise lagon tropical */
     --Fond-des-Sections: rgba(255, 255, 255, 0.6); /* Blanc légèrement transparent, comme l'écume */
-    --Boutons: rgba(255, 140, 0, 0.6);         /* Orange mangue chaleureux */
-    --Boutons-bordure: rgb(255, 140, 0);         /* Orange mangue chaleureux */
-    --Boutons-hover: rgba(255, 215, 0, 0.6);   /* Or doré, comme le soleil tropical */
-    --Liens: rgb(0, 191, 255);                 /* Bleu vif, comme les eaux peu profondes »*/
+    --Boutons: rgba(32, 104, 17, 0.6);         /* Orange mangue chaleureux */
+    --Boutons-bordure: rgb(41, 129, 23);         /* Orange mangue chaleureux */
+    --Boutons-hover: rgba(230, 230, 230, 0.6);   /* Or doré, comme le soleil tropical */
+    --Liens: rgb(0, 0, 0);                 /* Bleu vif, comme les eaux peu profondes »*/
 }
 @font-face {
     font-family: 'Titreh1';
@@ -36,6 +34,7 @@ body {
     background-color: var(--Fond-de-Page);
     color: var(--Texte-Principal);
     position: relative;
+    margin: 0;
     /* Important pour le positionnement des éléments avec z-index */
 }
 h1{
@@ -81,8 +80,10 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 0 2rem 0;
+    margin: 0 0 5rem 0;
     padding-top: 2rem;
+    padding-bottom: 5rem;
+
 
     a {
         display: block;
@@ -106,7 +107,7 @@ main {
     .monCV:hover {
         background-color: var(--Boutons-hover);
         color: var(--Texte-Principal);
-        box-shadow: 0 0 2rem var(--Boutons), 0 0 4rem var(--Boutons);
+        box-shadow: 0 0 2rem var(--Boutons-hover), 0 0 4rem var(--Boutons-hover);
     }
 
 
@@ -117,7 +118,7 @@ main {
     .pages:hover {
         background-color: var(--Boutons-hover);
         color: var(--Texte-Principal);
-        box-shadow: 0 0 2rem var(--Boutons), 0 0 4rem var(--Boutons);
+        box-shadow: 0 0 2rem var(--Boutons-hover), 0 0 4rem var(--Boutons-hover);
     }
 
 
@@ -128,7 +129,7 @@ main {
     .hobbies:hover {
         background-color: var(--Boutons-hover);
         color: var(--Texte-Principal);
-        box-shadow: 0 0 2rem var(--Boutons), 0 0 4rem var(--Boutons);
+        box-shadow: 0 0 2rem var(--Boutons-hover), 0 0 4rem var(--Boutons-hover);
     }
 }
 
@@ -146,7 +147,7 @@ main {
     background-color: var(--Boutons-hover);
     scale: 1.5;
     rotate: 360deg;
-    box-shadow: 0 0 2rem var(--Boutons), 0 0 4rem var(--Boutons);
+    box-shadow: 0 0 2rem var(--Boutons-hover), 0 0 4rem var(--Boutons-hover);
 }
 
 /* -------------------------------------------------------SECTION MON CV---------------------------------------- */
@@ -155,7 +156,7 @@ main {
     background-color: var(--Fond-des-Sections);
     box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
     max-width: 80%;
-    margin: 0 10% 2rem 10%;
+    margin: 5rem 10% 2rem 10%;
     border-radius: 50px;
     padding: 0.5rem 0;
 }
@@ -225,7 +226,7 @@ canvas {
     width: fit-content;
     margin: 1rem auto;
     padding: 1rem;
-    border: 2px solid var(--Boutons);
+    border: 2px solid var(--Boutons-bordure);
     border-radius: 1.5rem;
     background: var(--Boutons);
     color: var(--Texte-Principal);

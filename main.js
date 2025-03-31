@@ -75,7 +75,7 @@ const setup = [
     image3: "./img/setup/setup.jpg",
     image4: "./img/setup/setup-2.jpg",
     image5: "./img/setup/bibliotheque.jpg",
-    titre: "Mon setup et mon décor",
+    titre: "Mon setup et mon décor?",
     commentaire: "En 2022 j'ai monté mon pc gamer pour mon plus grand bonheur. Dépenser mon premier salaire de job d'été dans un pc qui me donne toujours autant de délires pendant mes soirées jeux avec mes amis ou juste me permet de regarder ce que je veux posé tranquillement c'est incroyable. Le fait de l'avoir monté moi même a été une expérience que j'ai adoré. Depuis le montagede ce pc je l'améliore en ajoutant des composants comme plus de stockage en SSD ou plus de RAM ou en changeant certaines parties de mon setup comme la souris le tapis le clavier. Les parties les plus récentes sont une nouvelle chaise et un micro qui a changé mon expérience de jeu. J4ai hate de rejouer dessus après chaque fin de session, découvrir de nouveaux jeux et avoir toujours autant de fous rires avec mes amis."
 }]
 
@@ -90,6 +90,16 @@ const jeux = [
     commentaire: "Quand j'étais petit je jouais sur la Wii et maintenant je joue encore mais sur un ordinateur monté par mes soins et assez performant pour faire tourner plein de jeux comme ARK, Cyberpunk, Minecraft avec des mods par dizaines, Subnautica et plein d'autres. Les osirées jeux entre amis j'aodre ça qu'on joue a des jeux droles comme Lethal company ou des jeux plus calmes mais tout aussi droles en multi comme Minecraft. J¨Les jeux vidéo m'ont fait grandir et m'ont permi de profiter de moments inoubliables avec mes amis."
 }]
 
+const lego = [
+  {
+    image1: "./img/",
+    image2: "./img/",
+    image3: "./img/",
+    image4: "./img/",
+    image5: "./img/",
+    titre: "Les Jeux vidéo",
+    commentaire: "Quand j'étais petit je jouais sur la Wii et maintenant je joue encore mais sur un ordinateur monté par mes soins et assez performant pour faire tourner plein de jeux comme ARK, Cyberpunk, Minecraft avec des mods par dizaines, Subnautica et plein d'autres. Les osirées jeux entre amis j'aodre ça qu'on joue a des jeux droles comme Lethal company ou des jeux plus calmes mais tout aussi droles en multi comme Minecraft. J¨Les jeux vidéo m'ont fait grandir et m'ont permi de profiter de moments inoubliables avec mes amis."
+}]
 
 function showprojects() {
 
@@ -384,8 +394,8 @@ document.addEventListener('DOMContentLoaded', () => {
       this.size = Math.random() * 3 + 1;
       this.speedX = Math.random() * 1 - 0.5;
       this.speedY = Math.random() * 1 - 0.5;
-      this.color = 'rgba(11, 147, 15)';
-      this.shadowColor = 'rgba(11, 147, 15), 0.5)'; // Ombre de la même couleur que la particule
+      this.color = 'rgb(15, 88, 19)';
+      this.shadowColor = 'rgba(11, 147, 15, 0.5)'; // Ombre de la même couleur que la particule
     }
 
     update() {
@@ -467,7 +477,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+// Event que je garde de coté
 // Sélection de l'élément qui suivra la souris
 // const mousemove = document.querySelector('.mousemove');
 
