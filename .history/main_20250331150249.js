@@ -98,7 +98,7 @@ const lego = [
     image4: "./img/pots1.jpg",
     image5: "./img/roses.jpg",
     titre: "Les Lego",
-    commentaire: "Les Lego je trouve ça incroyable, j'en ai une collection qui grandit depuis que je suis tout petit. J'ai grandi avec des briques de Lego dans les mains j'ai d'abord eu les City avec les pompiers et la police, puis les lego Marvel avec les super héros et plus récemment les plantes pour décorer mon appartement. Tout est très bien conçu et les détails qu'ils arrivent a donner est incroyable. J'ai hâte de voir ce que Lego va prévoir dans les années a venir."
+    commentaire: ""
 }]
 
 function showprojects() {
@@ -129,6 +129,8 @@ function showprojects() {
     projetbutton.innerText = element.bouton
     projetbutton.href = element.lien
     projetarticle.appendChild(projetbutton)
+
+
   }
   
 }

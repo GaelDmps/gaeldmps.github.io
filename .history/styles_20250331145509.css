@@ -4,7 +4,7 @@
     --Fond-de-Page: rgb(10, 68, 12);         
     --Fond-des-Sections: rgba(255, 255, 255, 0.7); 
     --Boutons: rgba(32, 104, 17, 0.7);         
-    --Boutons-bordure: rgb(255, 255, 255);         
+    --Boutons-bordure: rgb(41, 129, 23);         
     --Boutons-hover: rgba(230, 230, 230, 0.7);   
 }
 @font-face {
@@ -188,29 +188,6 @@ main {
     grid-template-rows: repeat(2, auto);
     text-align: center;
 }
-
-.boutons-projets {
-    display: block;
-    width: fit-content;
-    margin: 1rem auto;
-    padding: 1rem;
-    border: 2px solid var(--Boutons-bordure);
-    border-radius: 1.5rem;
-    background: var(--Boutons);
-    color: var(--Texte-Boutons);
-    text-decoration: none;
-    transition: .3s ease-in-out;
-    font-family: 'bouton';
-}
-
-.boutons-projets:hover{
-    color: var(--Texte-Principal);
-    background-color: var(--Boutons-hover);
-    box-shadow: 0 0 2rem var(--Fond-de-Page), 0 0 4rem var(--Fond-de-Page);
-    scale: 1.2;
-}
-
-
 
 /* Canvas des particules */
 canvas {
