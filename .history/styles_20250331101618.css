@@ -336,18 +336,18 @@ canvas {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #projets {
         grid-template-columns: repeat(2, 45%);
         gap: 2rem;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 576px) {
     #projets {
         grid-template-columns: 1fr;
         gap: 2rem;
         margin: 2rem 0;
     }
-}
+
 

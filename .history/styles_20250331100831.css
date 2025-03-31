@@ -174,7 +174,8 @@ main {
     box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
 }
 #projets {
-    z-index: 2;/* Assurez-vous que la section des projets est aussi au-dessus */
+    z-index: 2;
+    /* Assurez-vous que la section des projets est aussi au-dessus */
     margin: 3rem 0;
     max-width: 100%;
     display: grid;
@@ -187,7 +188,8 @@ main {
 
 /* Canvas des particules */
 canvas {
-    z-index: 0;/* Le canvas est en bas, derrière tout le contenu */
+    z-index: 0;
+    /* Le canvas est en bas, derrière tout le contenu */
 }
 
 
@@ -337,17 +339,12 @@ canvas {
 }
 
 @media (max-width: 768px) {
-    #projets {
-        grid-template-columns: repeat(2, 45%);
-        gap: 2rem;
+    header{
+        flex-direction: column;
+        a{
+            margin: 1rem;
+        };
     }
 }
 
-@media (max-width: 425px) {
-    #projets {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        margin: 2rem 0;
-    }
-}
 

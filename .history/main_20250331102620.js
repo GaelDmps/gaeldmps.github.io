@@ -1,7 +1,7 @@
 // Création de la section projets
 const projets = [
   {
-    image: "./projets/images/liste.webp",
+    image: "./projets/images/liste-triee.png",
     titre: "Trier une liste en JavaScript",
     explication: "J'ai fait mes premiers tests en Javascript .",
     bouton: "Voir la page",
