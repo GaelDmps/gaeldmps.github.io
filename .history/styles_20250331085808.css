@@ -1,11 +1,12 @@
 :root {
-    --Texte-Principal: rgb(34, 47, 62);
+    --Texte-Principal: rgb(34, 47, 62);/* Gris profond, comme une pierre de lave */
     --Texte-Boutons: rgb(255, 255 ,255);
-    --Fond-de-Page: rgb(10, 68, 12);         
-    --Fond-des-Sections: rgba(255, 255, 255, 0.7); 
-    --Boutons: rgba(32, 104, 17, 0.7);         
-    --Boutons-bordure: rgb(41, 129, 23);         
-    --Boutons-hover: rgba(230, 230, 230, 0.7);   
+    --Fond-de-Page: rgb(10, 68, 12);         /* Turquoise lagon tropical */
+    --Fond-des-Sections: rgba(255, 255, 255, 0.7); /* Blanc légèrement transparent, comme l'écume */
+    --Boutons: rgba(32, 104, 17, 0.7);         /* Orange mangue chaleureux */
+    --Boutons-bordure: rgb(41, 129, 23);         /* Orange mangue chaleureux */
+    --Boutons-hover: rgba(230, 230, 230, 0.7);   /* Or doré, comme le soleil tropical */
+    --Liens: rgb(0, 0, 0);                 /* Bleu vif, comme les eaux peu profondes »*/
 }
 @font-face {
     font-family: 'Titreh1';

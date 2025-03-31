@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
       this.size = Math.random() * 3 + 1;
       this.speedX = Math.random() * 1 - 0.5;
       this.speedY = Math.random() * 1 - 0.5;
-      this.color = 'rgb(14, 149, 19)';
+      this.color = 'rgb(25, 121, 29)';
       this.shadowColor = 'rgba(255, 255, 255, 0.7)'; // Ombre de la même couleur que la particule
     }
 
