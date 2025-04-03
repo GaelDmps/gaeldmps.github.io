@@ -76,7 +76,7 @@ const setup = [
     image4: "./img/setup/setup-2.jpg",
     image5: "./img/setup/bibliotheque.jpg",
     titre: "Mon setup et mon décor?",
-    commentaire: "En 2022 j'ai monté mon pc gaming. C'était la première fois qu eje touchais a des composants d'ordinateur, un ami qui avait aussi monté le sien m'a aidé. J'ai vraiment trouvé ce montage très intéressant et cela m'a permit d'aquérir des compétences dans ce domaine. C'est en partie grâce au montage de mon PC que j'ai voulu apprendre à coder. Cet ordinateur me permet également de jouer avec mes amis ou seul et découvrir des jeux vidéo de tout type piur découvrir dans quel univers je vais devoir évoluer, survivre ou construire pour avancer dans l'histoire. J'ai hâte de voir les jeux qui sortiront les prochaines années pour pouvoir rire et les découvrir seul ou avec mes amis."
+    commentaire: "En 2022 j'ai monté mon pc gaming. C'était la première fois qu eje touchais a des composants d'ordinateur, un ami qui avait aussi monté le sien m'a aidé. J'ai vraiment trouvé ce montage très intéressant et cela m'a permit d'aquérir des compétences dans ce domaine. C'est en partie grâce au montage de mon PC que j'ai voulu apprendre à coder. Cet ordinateur me permet également de jouer avec mes amis ou seul et découvrir des jeux vidéo dde tout type piur découvrir dans quel univers je vais devoir évoluer, survivre ou construire pour avancer dans l'histoire."
 }]
 
 const jeux = [
@@ -87,7 +87,7 @@ const jeux = [
     image4: "./img/jeux/subnautica-1.jpg",
     image5: "./img/jeux/subnautica.jpg",
     titre: "Les Jeux vidéo",
-    commentaire: "Quand j'étais petit je jouais sur la Wii, puis sur une xbox pour passer sur ordinateur. Je dois avoir une centaine de jeux sur mon PC, des jeux de plateau, de logique, d'horreur, de survie, j'ai tout type de jeux mais un en particulier me fait toujours autant rêver depuis que je peux jouer c'est Minecraft. Minecraft avec des mods qui ajoutent tout type de contenu que ça soit des créatures effrayantes, des biomes, ou même le mode le plus complet que j'ai trouvé jusqu'à aujourd'hui, le mod Create qui ajoute des mécanismes qui servent a tout faire. Transporter des objets, en fabriquer d'autres, les stocker et automatiser tout ce qui est possible et imaginables. Ce mod qui allie logique et imagination m'a fait me lancer dans le code, construire une structure pour tout relier et donner un résultat qui est esthétique, fonctionnel et pratique c'est tout ce que j'aime faire."
+    commentaire: "Quand j'étais petit je jouais sur la Wii et maintenant je joue encore mais sur un ordinateur monté par mes soins et assez performant pour faire tourner plein de jeux comme ARK, Cyberpunk, Minecraft avec des mods par dizaines, Subnautica et plein d'autres. Les osirées jeux entre amis j'aodre ça qu'on joue a des jeux droles comme Lethal company ou des jeux plus calmes mais tout aussi droles en multi comme Minecraft. J¨Les jeux vidéo m'ont fait grandir et m'ont permi de profiter de moments inoubliables avec mes amis."
 }]
 
 const lego = [
@@ -98,7 +98,7 @@ const lego = [
     image4: "./img/lego/pots1.jpg",
     image5: "./img/lego/roses.jpg",
     titre: "Les Lego",
-    commentaire: "Les Lego une de mes passions depuis mon plus jeune âge. Du plus loin qu eje me souvienne j'ai toujours été entouré de Lego, une créativité sans limite. J'ai sans doute commencé a jouer a minecraft parce que j'ai énormémément joué aux Lego avant. Plus récemment j'ai commencé une collection de Lego plantes. Je préfère davantage les Lego qui peuvent servir de décoration par rapport à avant quand je préférais les Lego pour avoir des personnages et créer des histoires. Je trouve les détails des plantes magnifiques et je suis impatient de voir les prochaines qui vont sortir pour possiblement les acheter."
+    commentaire: "Les Lego je trouve ça incroyable, j'en ai une collection qui grandit depuis que je suis tout petit. J'ai grandi avec des briques de Lego dans les mains j'ai d'abord eu les City avec les pompiers et la police, puis les lego Marvel avec les super héros et plus récemment les plantes pour décorer mon appartement. Tout est très bien conçu et les détails qu'ils arrivent a donner est incroyable. J'ai hâte de voir ce que Lego va prévoir dans les années a venir."
 }]
 
 function showprojects() {

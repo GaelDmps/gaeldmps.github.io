@@ -98,7 +98,7 @@ const lego = [
     image4: "./img/lego/pots1.jpg",
     image5: "./img/lego/roses.jpg",
     titre: "Les Lego",
-    commentaire: "Les Lego une de mes passions depuis mon plus jeune âge. Du plus loin qu eje me souvienne j'ai toujours été entouré de Lego, une créativité sans limite. J'ai sans doute commencé a jouer a minecraft parce que j'ai énormémément joué aux Lego avant. Plus récemment j'ai commencé une collection de Lego plantes. Je préfère davantage les Lego qui peuvent servir de décoration par rapport à avant quand je préférais les Lego pour avoir des personnages et créer des histoires. Je trouve les détails des plantes magnifiques et je suis impatient de voir les prochaines qui vont sortir pour possiblement les acheter."
+    commentaire: ""
 }]
 
 function showprojects() {
