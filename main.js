@@ -1,4 +1,6 @@
 // Création de la section projets
+"use strict"
+
 const projets = [
   {
     image: "./projets/images/liste.webp",
