@@ -110,21 +110,13 @@ main h2{
 
 /*FOOTER*/
 footer{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 4;
     align-items: center;
-    p{
-        font-size: 1.5rem;
-    }
+    font-family: 'reg';
     img{
-        max-width: 3rem;
-    };
-    article{
-        display: flex;
-        align-items: center;
-        span{
-            margin: 1rem;
-        }
+        max-width: 2rem;
     }
     }
 

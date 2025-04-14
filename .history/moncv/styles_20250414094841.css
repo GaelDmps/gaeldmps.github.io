@@ -112,19 +112,11 @@ main h2{
 footer{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    p{
-        font-size: 1.5rem;
-    }
     img{
         max-width: 3rem;
     };
     article{
-        display: flex;
-        align-items: center;
-        span{
-            margin: 1rem;
-        }
+        
     }
     }
 

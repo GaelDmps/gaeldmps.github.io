@@ -15,7 +15,7 @@
     src: url(Font/ChakraPetch-Medium.ttf);
 
 }
-
+@media (min-width: 768px) {
 *{
     max-width: 100%;
 }
@@ -111,22 +111,38 @@ main h2{
 /*FOOTER*/
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    font-family: 'reg';
     p{
-        font-size: 1.5rem;
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+    a{
+        padding-top: 1rem;
+        width: 20%;
     }
     img{
-        max-width: 3rem;
-    };
-    article{
+        max-width: 100%;
+        width: 5rem;
+        height: auto;
+    }
+    li{
         display: flex;
         align-items: center;
+        img{
+            max-width: 100%;
+            width: 5%;
+            margin-right: 2rem;
+            padding-top: 1rem;
+        }
         span{
-            margin: 1rem;
+            padding-top: 1rem;
         }
     }
-    }
+}
+
+}
 
 
 
@@ -135,10 +151,7 @@ footer{
 
 
 
-
-
-
-@media (max-width: 768px){
+@media (max-width: 767px){
     h1{
         font-family: 'Gras';
     }
