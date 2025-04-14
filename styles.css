@@ -222,7 +222,6 @@ canvas {
     align-items: center;
     justify-content: space-between;    
     border-radius: 50px;
-    /* Bleu avec 70% d'opacité */
     margin: 2rem;
     border-radius: 50px;
     background: var(--Fond-des-Sections);
