@@ -5,8 +5,7 @@
     --Fond-des-Sections: rgba(255, 255, 255, 0.7); 
     --Boutons: rgba(32, 104, 17, 0.7);         
     --Boutons-bordure: rgb(255, 255, 255);         
-    --Boutons-hover: rgba(230, 230, 230, 0.7);
-    --highlight-mail: rgb(34, 255, 0);   
+    --Boutons-hover: rgba(230, 230, 230, 0.7);   
 }
 @font-face {
     font-family: 'Titreh1';
@@ -65,7 +64,7 @@ p {
     font-family: 'paragraphe';
     font-size: 1.5rem;
     width: 90%;
-    margin: 1rem auto;
+    margin: 1rem 5%;
     text-align: center;
 };
 main {
@@ -161,7 +160,7 @@ main {
     background-color: var(--Fond-des-Sections);
     box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
     max-width: 80%;
-    margin: 5rem auto 2rem auto;
+    margin: 5rem 10% 2rem 10%;
     border-radius: 50px;
     padding: 0.5rem 0;
 }
@@ -173,7 +172,7 @@ main {
 
 #section2{
     max-width: 90%;
-    margin:10rem auto 5rem auto;
+    margin:10rem 5% 5rem 5%;
 }
 #projets {
     z-index: 2;/* Assurez-vous que la section des projets est aussi au-dessus */
@@ -269,8 +268,10 @@ canvas {
 
 /* -----------------------------------------------------------PASSIONS----------------------------------------------------------------- */
 #section3{
+    /* background: var(--Fond-des-Sections); */
+    /* box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections); */
     max-width: 90%;
-    margin:10rem auto 5rem auto;
+    margin:10rem 5% 5rem 5%;
 }
 .title{
     background: var(--Fond-des-Sections);
@@ -309,7 +310,7 @@ canvas {
     width: 60%;
     margin: 3rem 10% 3rem 30%;
     padding: 3rem;
-    box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem  var(--Fond-des-Sections);
+    box-shadow: 0 0 2rem var(--Fond-de-Page), 0 0 4rem  var(--Fond-de-Page);
     border-radius: 50px;
 }
 .position-inverse{
@@ -320,7 +321,7 @@ canvas {
     width: 60%;
     margin: 3rem 30% 3rem 10%;
     padding: 3rem;
-    box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem  var(--Fond-des-Sections);
+    box-shadow: 0 0 2rem var(--Fond-de-Page), 0 0 4rem  var(--Fond-de-Page);
     border-radius: 50px;
 }
 .slider{
@@ -366,33 +367,20 @@ canvas {
     }
 }
 
-/* --------------------------------------------------------------------Formulaire----------------------------------------------- */
-
-.contact-section {
-    background-color: var(--Fond-des-Sections);
-    box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
-    max-width: 70%;
-    margin: 5rem auto;
-    border-radius: 50px;
-    padding: 3rem 2rem;
-    text-align: center;
-}
-
-.contact-section h2 {
-    font-family: 'Titreh2';
-    font-size: 2.5rem;
-}
-
-.formulaire iframe {
-    border-radius: 30px;
-    box-shadow: 0 0 1rem var(--Fond-de-Page);
-}
-
 /* --------------------------------------------------------------------FOOTER----------------------------------------------- */
-footer{
+.footer{
     display: flex;
     justify-content: space-around;
     margin-bottom: 3rem;
+}
+footer p{
+    color: var(--Texte-Principal);
+    border: 2px solid var(--Boutons-bordure);
+    border-radius: 50px;
+    background: var(--Fond-des-Sections);
+    box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
+    width: 70%;
+    margin: 2rem 15%;
 }
 
 @media (max-width: 768px) {
@@ -416,7 +404,7 @@ footer{
     .slider{
         max-width: 100%;
     }
-    footer{
+    .footer{
         flex-direction: column;
         a{
             margin: 1rem;

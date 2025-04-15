@@ -320,7 +320,7 @@ canvas {
     width: 60%;
     margin: 3rem 30% 3rem 10%;
     padding: 3rem;
-    box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem  var(--Fond-des-Sections);
+    box-shadow: 0 0 2rem var(--Fond-de-Page), 0 0 4rem  var(--Fond-de-Page);
     border-radius: 50px;
 }
 .slider{
