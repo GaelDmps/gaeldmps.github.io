@@ -276,6 +276,25 @@ canvas {
     box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
      border-radius: 50px;
 }
+ #escalade{
+    left: -100%;
+}
+
+/*#manga{
+
+}
+
+#jeux{
+
+}
+
+#setup{
+
+}
+
+#lego{
+
+} */
 
 .position{
     display: flex;

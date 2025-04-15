@@ -276,7 +276,6 @@ canvas {
     box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
      border-radius: 50px;
 }
-
 .position{
     display: flex;
     justify-content: space-around;
