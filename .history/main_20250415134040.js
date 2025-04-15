@@ -136,7 +136,6 @@ function showprojects() {
     projetbutton.classList.add('boutons-projets')
     projetbutton.innerText = element.bouton
     projetbutton.href = element.lien
-    projetbutton.target = element.page
     projetarticle.appendChild(projetbutton)
   }
   
