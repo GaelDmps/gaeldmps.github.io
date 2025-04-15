@@ -145,7 +145,7 @@ main {
 
 
 .headerscroll {
-    background-color: var(--Fond-du-header) !important;
+    background-color: var(--Fond-du-header);
     /* Utilisation de !important pour s'assurer que cette règle s'applique */
 }
 

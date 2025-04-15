@@ -144,10 +144,6 @@ main {
 }
 
 
-.headerscroll {
-    background-color: var(--Fond-du-header) !important;
-    /* Utilisation de !important pour s'assurer que cette règle s'applique */
-}
 
 .imageheader {
     width: 5rem;
@@ -162,6 +158,10 @@ main {
     scale: 1.2;
     rotate: 360deg;
     box-shadow: 0 0 2rem var(--Boutons-hover), 0 0 4rem var(--Boutons-hover);
+}
+.headerscroll {
+    background-color: var(--Fond-du-header);
+    /* Utilisation de !important pour s'assurer que cette règle s'applique */
 }
 /* -------------------------------------------------------SECTION MON CV---------------------------------------- */
 

@@ -517,13 +517,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Event scroll pour le header
 
-  const header = document.querySelector("header");
+  const header = document.querySelector(".headerscroll");
 
-  window.addEventListener('scroll', () => {    
-    if (window.scrollY > 100) {
+window.addEventListener('scroll', () => {    
+    if (window.scrollY > 120) {
         header.classList.add('headerscroll')
     } else {
-        header.classList.remove('headerscroll')
+        header.style.top = "-50px"
     }
 })
 // Appel des fonctions qui affichent les différentes parties de la page

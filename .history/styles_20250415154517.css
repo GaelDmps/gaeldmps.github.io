@@ -80,17 +80,17 @@ main {
 
 #header {
     width: 100%;
+    /* height: 80px; */
     top: 0;
     left: 0;
     position: fixed;
     z-index: 100;
+    /* le header est au-dessus du canvas de particules */
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0;
     padding: 2rem 0;
-    background: transparent;
-    transition: background-color 0.5s ease-in-out;
 
     a {
         display: block;
@@ -144,10 +144,6 @@ main {
 }
 
 
-.headerscroll {
-    background-color: var(--Fond-du-header) !important;
-    /* Utilisation de !important pour s'assurer que cette règle s'applique */
-}
 
 .imageheader {
     width: 5rem;
@@ -162,6 +158,11 @@ main {
     scale: 1.2;
     rotate: 360deg;
     box-shadow: 0 0 2rem var(--Boutons-hover), 0 0 4rem var(--Boutons-hover);
+}
+.headerscroll{
+    /* background: var(--Fond-du-header); */
+    transform:var(--Fond-du-header)
+    transition: 1s ease-in-out;
 }
 /* -------------------------------------------------------SECTION MON CV---------------------------------------- */
 

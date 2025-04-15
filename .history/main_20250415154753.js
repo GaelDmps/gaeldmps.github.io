@@ -519,11 +519,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const header = document.querySelector("header");
 
-  window.addEventListener('scroll', () => {    
+window.addEventListener('scroll', () => {    
     if (window.scrollY > 100) {
         header.classList.add('headerscroll')
-    } else {
+        header.classList.add('hidden')
+      } else {
         header.classList.remove('headerscroll')
+        header.classList.remove('hidden')
     }
 })
 // Appel des fonctions qui affichent les différentes parties de la page

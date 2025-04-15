@@ -2,8 +2,7 @@
     --Texte-Principal: rgb(34, 47, 62);
     --Texte-Boutons: rgb(255, 255 ,255);
     --Fond-de-Page: rgb(10, 68, 12);         
-    --Fond-du-header: rgba(10, 68, 12, 0.8);         
-    --Fond-du-header2: rgba(10, 68, 12, 0);         
+    --Fond-du-header: rgba(10, 68, 12, 0.7);         
     --Fond-des-Sections: rgba(255, 255, 255, 0.7); 
     --Boutons: rgba(32, 104, 17, 0.7);         
     --Boutons-bordure: rgb(255, 255, 255);         
@@ -80,17 +79,17 @@ main {
 
 #header {
     width: 100%;
+    height: 80px;
     top: 0;
-    left: 0;
     position: fixed;
     z-index: 100;
+    /* le header est au-dessus du canvas de particules */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0;
-    padding: 2rem 0;
-    background: transparent;
-    transition: background-color 0.5s ease-in-out;
+    margin: 0 0 5rem 0;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 
     a {
         display: block;
@@ -144,10 +143,6 @@ main {
 }
 
 
-.headerscroll {
-    background-color: var(--Fond-du-header) !important;
-    /* Utilisation de !important pour s'assurer que cette règle s'applique */
-}
 
 .imageheader {
     width: 5rem;
@@ -163,13 +158,18 @@ main {
     rotate: 360deg;
     box-shadow: 0 0 2rem var(--Boutons-hover), 0 0 4rem var(--Boutons-hover);
 }
+.headerscroll{
+    background: var(--Fond-du-header);
+
+}
+
 /* -------------------------------------------------------SECTION MON CV---------------------------------------- */
 
 #section1{
     background-color: var(--Fond-des-Sections);
     box-shadow: 0 0 2rem var(--Fond-des-Sections), 0 0 4rem var(--Fond-des-Sections);
     max-width: 80%;
-    margin: 15rem auto 2rem auto;
+    margin: 5rem auto 2rem auto;
     border-radius: 50px;
     padding: 0.5rem 0;
 }

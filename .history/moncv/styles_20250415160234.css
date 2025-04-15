@@ -83,11 +83,9 @@ header{
     #loisirs li:hover{
         color: skyblue;
     }
-    #profil li{
-        transform-origin: left;
-    }
     #profil li:hover{
         transform: scale(1.2);
+        transform-origin: left;
     }
     #profil li{
         transition: transform .5s;
@@ -180,7 +178,7 @@ footer{
         margin: 1rem 35%;
     }
     header img:hover{
-        transform: scale(1.3);
+        transform: scale(1.3) rotate(360deg);
     }
     header{
         display: block;
@@ -199,7 +197,7 @@ footer{
     #droite{
         border: 2px solid skyblue;
         border-radius: 20px;
-        margin: 0 0 3rem 0;
+        margin-bottom: 3rem;
         padding: 1rem;
         #profil li:hover{
             transform: scale(1.4);
