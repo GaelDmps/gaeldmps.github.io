@@ -521,7 +521,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const boutonhaut = document.getElementById('hautdepage');
 
   window.addEventListener('scroll', () => {    
-    if (window.scrollY > 100) {
+    if (window.scrollY > 50) {
         header.classList.add('headerscroll')
         boutonhaut.classList.add('boutonhaut')
     } else {

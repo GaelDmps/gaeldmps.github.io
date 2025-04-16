@@ -515,7 +515,7 @@ document.addEventListener('DOMContentLoaded', () => {
   animate();
 
 
-  // Event scroll pour le header et le bouton de retour en haut de page
+  // Event scroll pour le header
 
   const header = document.querySelector("header");
   const boutonhaut = document.getElementById('hautdepage');
