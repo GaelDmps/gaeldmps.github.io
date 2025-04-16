@@ -80,6 +80,7 @@ main {
 
 
 /* ------------------------------------------------HEADER---------------------------------------------------------- */
+
 #header {
     width: 100%;
     top: 0;
@@ -430,7 +431,6 @@ canvas {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem;
-    transition: position 0.5s ease-in-out;
 } 
 #navfooter{
     display: flex;
@@ -445,6 +445,7 @@ canvas {
 .boutonhaut{
     position:fixed;
     bottom: 4rem;
+    transition: .5s ease-in-out !important;
 }
 
 

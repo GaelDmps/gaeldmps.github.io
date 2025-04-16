@@ -80,6 +80,7 @@ main {
 
 
 /* ------------------------------------------------HEADER---------------------------------------------------------- */
+
 #header {
     width: 100%;
     top: 0;
@@ -430,23 +431,16 @@ canvas {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem;
-    transition: position 0.5s ease-in-out;
 } 
-#navfooter{
+/* #navfooter{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    flex-basis: 100%;
 }
 #hautdepage{
     right: 0;
     margin: 0 2rem;
-}
-.boutonhaut{
-    position:fixed;
-    bottom: 4rem;
-}
-
+} */
 
 
 

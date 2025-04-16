@@ -523,10 +523,10 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', () => {    
     if (window.scrollY > 100) {
         header.classList.add('headerscroll')
-        boutonhaut.classList.add('boutonhaut')
+        boutonhaut.style.position = 'absolute'
     } else {
         header.classList.remove('headerscroll')
-        boutonhaut.classList.remove('boutonhaut')
+        boutonhaut.style.position = 'static'
     }
 })
 
