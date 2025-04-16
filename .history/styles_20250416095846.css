@@ -45,13 +45,13 @@ h1{
     font-family: 'Titreh1';
     font-size: 4rem;
     text-align: center;
-    margin: 2rem auto;
+    margin: 2rem 0;
 }
 h2{
     font-family: 'Titreh2';
     font-size: 2.5rem;
     text-align: center;
-    margin: 2rem auto;
+    margin: 2rem 0 0 0;
 }
 h3{
     font-family: 'Titreh3';
@@ -59,7 +59,7 @@ h3{
     text-align: center;
     width: 90%;
     padding-top: 2rem;
-    margin: 0 auto;
+    margin: 0 5%;
     height: 5rem;
 }
 p {
@@ -72,9 +72,6 @@ p {
 main {
     position: relative;
     z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     /* Z-index supérieur pour ces éléments afin qu'ils se trouvent au-dessus du canvas */
 }
 
@@ -166,57 +163,6 @@ main {
     rotate: 360deg;
     box-shadow: 0 0 2rem var(--Boutons-hover), 0 0 4rem var(--Boutons-hover);
 }
-
-/* Menu Burger Styles */
-.burger-container {
-    display: none;
-    position: relative;
-  }
-  
-  .burger-icon {
-    display: inline-block;
-    cursor: pointer;
-    z-index: 101;
-  }
-  
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-    border-radius: 5px;
-  }
-  
-  /* Transformation du burger en X */
-  .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  
-  .change .bar2 {
-    opacity: 0;
-  }
-  
-  .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
-  
-  .burger-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: var(--Fond-du-header);
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 10px;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .burger-menu.active {
-    display: flex;
-  }
 /* -------------------------------------------------------SECTION MON CV---------------------------------------- */
 
 #section1{
@@ -421,6 +367,7 @@ canvas {
     font-family: 'Titreh2';
     font-size: 2.5rem;
 }
+
 .formulaire iframe {
     border-radius: 30px;
     box-shadow: 0 0 1rem var(--Fond-de-Page);
@@ -438,17 +385,13 @@ footer{
 /* ------------------------------------------------------------RESPONSIVE-------------------------------------------------- */
 
 @media (max-width: 768px) {
-    .title{
-        margin: 0;
-        padding: 1rem;
-    }
     #projets{
         grid-template-columns: 1fr;
         gap: 2rem;
         margin: 2rem 0;
     }
     #section1{
-        margin-top: 15rem;
+        margin-top: 10rem;
     }
     .position{
         flex-direction: column-reverse;
@@ -461,49 +404,15 @@ footer{
     .slider{
         max-width: 100%;
     }
-    .formulaire iframe {
-        width: 100%;
-    }
     footer{
         flex-direction: column;
         a{
             margin: 1rem;
         }
     }
-
-    #header {
-        justify-content: space-around; /* Centre les éléments au lieu de space-between */
-        padding: 2rem 5%;
-        gap: 50px; /* Espace entre le burger et l'image */
-      }
-      
-      #header > a:not(.imageheader) {
-        display: none;
-      }
-      
-      .burger-container {
-        display: block;
-        order: 2;
-        margin: 0; /* Réinitialise les marges */
-      }
-      
-      .imageheader {
-        order: 1;
-        margin: 0; /* Réinitialise les marges */
-      }
-    
 }
 
 @media (max-width: 425px) {
-    header{
-        flex-direction: column-reverse;
-        a{
-            margin: 1rem;
-        }
-    }
-    #section1{
-        margin-top: 25rem;
-    }
     h1{
         font-size: 2.5rem;
     }
@@ -520,37 +429,8 @@ footer{
     #section2{
         h2{
             width: 90%;
-            margin: 0rem auto;
-            padding: 1rem;
+            margin: 0rem 5%;
+            padding-top: 3rem;
         }
     }
-    footer{
-        display: grid;
-        grid-template-columns: repeat(2, 40%);
-        grid-template-rows: repeat(3, auto);
-    }
-
-    #header {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2rem 5%;
-      }
-      
-      #section1 {
-        margin-top: 15rem;
-      }
-      
-      .burger-menu a {
-        width: 100%;
-        margin: 5px 0;
-        text-align: center;
-      }
-      .burger-container {
-        right: calc(5% + 70px); /* Ajustement pour les écrans plus petits */
-      }
-      #header {
-        padding: 1.5rem 5%;
-        gap: 30px;
-      }
 }

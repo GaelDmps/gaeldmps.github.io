@@ -45,13 +45,13 @@ h1{
     font-family: 'Titreh1';
     font-size: 4rem;
     text-align: center;
-    margin: 2rem auto;
+    margin: 2rem 0;
 }
 h2{
     font-family: 'Titreh2';
     font-size: 2.5rem;
     text-align: center;
-    margin: 2rem auto;
+    margin: 2rem 0 0 0;
 }
 h3{
     font-family: 'Titreh3';
@@ -59,7 +59,7 @@ h3{
     text-align: center;
     width: 90%;
     padding-top: 2rem;
-    margin: 0 auto;
+    margin: 0 5%;
     height: 5rem;
 }
 p {
@@ -438,10 +438,6 @@ footer{
 /* ------------------------------------------------------------RESPONSIVE-------------------------------------------------- */
 
 @media (max-width: 768px) {
-    .title{
-        margin: 0;
-        padding: 1rem;
-    }
     #projets{
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -470,28 +466,6 @@ footer{
             margin: 1rem;
         }
     }
-
-    #header {
-        justify-content: space-around; /* Centre les éléments au lieu de space-between */
-        padding: 2rem 5%;
-        gap: 50px; /* Espace entre le burger et l'image */
-      }
-      
-      #header > a:not(.imageheader) {
-        display: none;
-      }
-      
-      .burger-container {
-        display: block;
-        order: 2;
-        margin: 0; /* Réinitialise les marges */
-      }
-      
-      .imageheader {
-        order: 1;
-        margin: 0; /* Réinitialise les marges */
-      }
-    
 }
 
 @media (max-width: 425px) {
@@ -520,8 +494,8 @@ footer{
     #section2{
         h2{
             width: 90%;
-            margin: 0rem auto;
-            padding: 1rem;
+            margin: 0rem 5%;
+            padding-top: 3rem;
         }
     }
     footer{
@@ -529,28 +503,4 @@ footer{
         grid-template-columns: repeat(2, 40%);
         grid-template-rows: repeat(3, auto);
     }
-
-    #header {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2rem 5%;
-      }
-      
-      #section1 {
-        margin-top: 15rem;
-      }
-      
-      .burger-menu a {
-        width: 100%;
-        margin: 5px 0;
-        text-align: center;
-      }
-      .burger-container {
-        right: calc(5% + 70px); /* Ajustement pour les écrans plus petits */
-      }
-      #header {
-        padding: 1.5rem 5%;
-        gap: 30px;
-      }
 }

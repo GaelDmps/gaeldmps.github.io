@@ -520,8 +520,8 @@ footer{
     #section2{
         h2{
             width: 90%;
-            margin: 0rem auto;
-            padding: 1rem;
+            margin: 0rem 5%;
+            padding-top: 3rem;
         }
     }
     footer{

@@ -458,8 +458,8 @@ document.addEventListener('DOMContentLoaded', () => {
       this.size = Math.random() * 3 + 1;
       this.speedX = Math.random() * 1 - 0.5;
       this.speedY = Math.random() * 1 - 0.5;
-      this.color = 'rgb(18, 205, 25)';
-      this.shadowColor = 'rgba(255, 255, 255, 0.85)'; // Ombre de la même couleur que la particule
+      this.color = 'rgb(17, 181, 22)';
+      this.shadowColor = 'rgba(255, 255, 255, 0.8)'; // Ombre de la même couleur que la particule
     }
 
     update() {
@@ -528,33 +528,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 
-// Menu Burger
-const burgerIcon = document.querySelector('.burger-icon');
-const burgerMenu = document.querySelector('.burger-menu');
 
-if (burgerIcon) {
-  burgerIcon.addEventListener('click', function() {
-    this.classList.toggle('change');
-    burgerMenu.classList.toggle('active');
-  });
-}
-
-// Fermer le menu si on clique sur un lien
-const burgerLinks = document.querySelectorAll('.burger-menu a');
-burgerLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    burgerIcon.classList.remove('change');
-    burgerMenu.classList.remove('active');
-  });
-});
-
-// Fermer le menu si on clique en dehors
-document.addEventListener('click', (e) => {
-  if (!burgerIcon.contains(e.target) && !burgerMenu.contains(e.target) && burgerMenu.classList.contains('active')) {
-    burgerIcon.classList.remove('change');
-    burgerMenu.classList.remove('active');
-  }
-});
 // Appel des fonctions qui affichent les différentes parties de la page
 
   showprojects()
