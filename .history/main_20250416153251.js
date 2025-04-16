@@ -122,8 +122,8 @@ const jeux = [
     alt1: "machine minecraft pour Auto Craft",
     alt2: "mod minecraft d'horreur 1",
     alt3: "mod minecraft d'horreur 2",
-    alt4: "Subnautica abysses",
-    alt5: "Subnautica couché de soleil",
+    alt4: "Subnautica ",
+    alt5: "Subnautica 2",
 }]
 
 // création de la cinquième partie de la section passions --> la div lego
@@ -135,12 +135,7 @@ const lego = [
     image4: "./img/lego/pots1.jpg",
     image5: "./img/lego/roses.jpg",
     titre: "Les Lego",
-    commentaire: "Les Lego une de mes passions depuis mon plus jeune âge. Du plus loin que je me souvienne j'ai toujours été entouré de Lego, une source de créativité sans limite. J'ai sans doute commencé a jouer a minecraft parce que j'ai énormémément joué aux Lego avant. Plus récemment j'ai commencé une collection de Lego représentant des plantes. Je préfère davantage les Lego qui peuvent servir de décoration par rapport à avant quand je préférais les Lego pour avoir des personnages et créer des histoires. Je trouve les détails des plantes magnifiques et je suis impatient de voir les prochaines qui vont sortir pour possiblement les acheter.",
-    alt1: "Lego camera disney",
-    alt2: "Lego chrysantheme",
-    alt3: "Lego Marvel",
-    alt4: "Lego pots de fleurs",
-    alt5: "Lego roses",
+    commentaire: "Les Lego une de mes passions depuis mon plus jeune âge. Du plus loin que je me souvienne j'ai toujours été entouré de Lego, une source de créativité sans limite. J'ai sans doute commencé a jouer a minecraft parce que j'ai énormémément joué aux Lego avant. Plus récemment j'ai commencé une collection de Lego représentant des plantes. Je préfère davantage les Lego qui peuvent servir de décoration par rapport à avant quand je préférais les Lego pour avoir des personnages et créer des histoires. Je trouve les détails des plantes magnifiques et je suis impatient de voir les prochaines qui vont sortir pour possiblement les acheter."
 }]
 
 
@@ -162,7 +157,6 @@ function showprojects() {
 
     const projetimg = document.createElement('img')
     projetimg.src = element.image
-    projetimg.alt = element.alt
     projetarticle.appendChild(projetimg)
 
     const projetexplain = document.createElement('p')
@@ -202,32 +196,26 @@ function showescalade() {
     
     const imgescalade1 = document.createElement('img')
     imgescalade1.src = element.image1
-    imgescalade1.alt = element.alt1
     imgcontainer.appendChild(imgescalade1)
     
     const imgescalade2 = document.createElement('img')
     imgescalade2.src = element.image2
-    imgescalade2.alt = element.alt2
     imgcontainer.appendChild(imgescalade2)
     
     const imgescalade3 = document.createElement('img')
     imgescalade3.src = element.image3
-    imgescalade3.alt = element.alt3
     imgcontainer.appendChild(imgescalade3)
     
     const imgescalade4 = document.createElement('img')
     imgescalade4.src = element.image4
-    imgescalade4.alt = element.alt4
     imgcontainer.appendChild(imgescalade4)
 
     const imgescalade5 = document.createElement('img')
     imgescalade5.src = element.image5
-    imgescalade5.alt = element.alt5
     imgcontainer.appendChild(imgescalade5)
     
     const imgescaladeretour = document.createElement('img')
     imgescaladeretour.src = element.image1
-    imgescaladeretour.alt = element.alt1
     imgcontainer.appendChild(imgescaladeretour)
 
     const group = document.createElement('hgroup')
@@ -277,32 +265,26 @@ function showescalade() {
       
       const imgmanga1 = document.createElement('img')
       imgmanga1.src = element.image1
-      imgmanga1.alt = element.alt1
       imgcontainer.appendChild(imgmanga1)
       
       const imgmanga2 = document.createElement('img')
       imgmanga2.src = element.image2
-      imgmanga2.alt = element.alt2
       imgcontainer.appendChild(imgmanga2)
       
       const imgmanga3 = document.createElement('img')
       imgmanga3.src = element.image3
-      imgmanga3.alt = element.alt3
       imgcontainer.appendChild(imgmanga3)
       
       const imgmanga4 = document.createElement('img')
       imgmanga4.src = element.image4
-      imgmanga4.alt = element.alt4
       imgcontainer.appendChild(imgmanga4)
   
       const imgmanga5 = document.createElement('img')
       imgmanga5.src = element.image5
-      imgmanga5.alt = element.alt5
       imgcontainer.appendChild(imgmanga5)
       
       const imgmangaretour = document.createElement('img')
       imgmangaretour.src = element.image1
-      imgmangaretour.alt = element.alt1
       imgcontainer.appendChild(imgmangaretour)
   
     }
@@ -332,32 +314,26 @@ function showsetup() {
     
     const imgsetup1 = document.createElement('img')
     imgsetup1.src = element.image1
-    imgsetup1.alt = element.alt1
     imgcontainer.appendChild(imgsetup1)
     
     const imgsetup2 = document.createElement('img')
     imgsetup2.src = element.image2
-    imgsetup2.alt = element.alt2
     imgcontainer.appendChild(imgsetup2)
     
     const imgsetup3 = document.createElement('img')
     imgsetup3.src = element.image3
-    imgsetup3.alt = element.alt3
     imgcontainer.appendChild(imgsetup3)
     
     const imgsetup4 = document.createElement('img')
     imgsetup4.src = element.image4
-    imgsetup4.alt = element.alt4
     imgcontainer.appendChild(imgsetup4)
 
     const imgsetup5 = document.createElement('img')
     imgsetup5.src = element.image5
-    imgsetup5.alt = element.alt5
     imgcontainer.appendChild(imgsetup5)
     
     const imgsetupretour = document.createElement('img')
     imgsetupretour.src = element.image1
-    imgsetupretour.alt = element.alt1
     imgcontainer.appendChild(imgsetupretour)
 
     const group = document.createElement('hgroup')
@@ -408,32 +384,26 @@ function showjeux() {
     
     const imgjeux1 = document.createElement('img')
     imgjeux1.src = element.image1
-    imgjeux1.alt = element.alt1
     imgcontainer.appendChild(imgjeux1)
     
     const imgjeux2 = document.createElement('img')
     imgjeux2.src = element.image2
-    imgjeux2.alt = element.alt2
     imgcontainer.appendChild(imgjeux2)
     
     const imgjeux3 = document.createElement('img')
     imgjeux3.src = element.image3
-    imgjeux3.alt = element.alt3
     imgcontainer.appendChild(imgjeux3)
     
     const imgjeux4 = document.createElement('img')
     imgjeux4.src = element.image4
-    imgjeux4.alt = element.alt4
     imgcontainer.appendChild(imgjeux4)
 
     const imgjeux5 = document.createElement('img')
     imgjeux5.src = element.image5
-    imgjeux5.alt = element.alt5
     imgcontainer.appendChild(imgjeux5)
     
     const imgjeuxretour = document.createElement('img')
     imgjeuxretour.src = element.image1
-    imgjeuxretour.alt = element.alt1
     imgcontainer.appendChild(imgjeuxretour)
   }
 }
@@ -461,32 +431,26 @@ function showlego() {
     
     const imglego1 = document.createElement('img')
     imglego1.src = element.image1
-    imglego1.alt = element.alt1
     imgcontainer.appendChild(imglego1)
     
     const imglego2 = document.createElement('img')
     imglego2.src = element.image2
-    imglego2.alt = element.alt2
     imgcontainer.appendChild(imglego2)
     
     const imglego3 = document.createElement('img')
     imglego3.src = element.image3
-    imglego3.alt = element.alt3
     imgcontainer.appendChild(imglego3)
     
     const imglego4 = document.createElement('img')
     imglego4.src = element.image4
-    imglego4.alt = element.alt4
     imgcontainer.appendChild(imglego4)
     
     const imglego5 = document.createElement('img')
     imglego5.src = element.image5
-    imglego5.alt = element.alt5
     imgcontainer.appendChild(imglego5)
     
     const imglegoretour = document.createElement('img')
     imglegoretour.src = element.image1
-    imglegoretour.alt = element.alt1
     imgcontainer.appendChild(imglegoretour)
     
     const group = document.createElement('hgroup')
