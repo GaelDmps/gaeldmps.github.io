@@ -509,6 +509,7 @@ canvas {
         font-size: 1rem;
     }
     header{
+        flex-direction: column-reverse;
         a{
             margin: 1rem;
         }
@@ -516,16 +517,16 @@ canvas {
     #header {
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         padding: 2rem auto;
-        gap: 50%;
+        gap: 30px;
       }
       .burger-menu a {
         width: 100%;
         text-align: center;
       }
       .burger-container {
-        right: calc(5%); /* Ajustement pour les écrans plus petits */
+        right: calc(5% + 70px); /* Ajustement pour les écrans plus petits */
     }
     #section1{
         margin-top: 15rem;

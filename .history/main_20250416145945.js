@@ -387,6 +387,17 @@ function showlego() {
     articlelego.classList.add('position')
     displaylego.appendChild(articlelego)
     
+    const group = document.createElement('hgroup')
+    articlelego.appendChild(group)
+
+    const legotitre = document.createElement('h2')
+    legotitre.innerText = element.titre
+    group.appendChild(legotitre)
+
+    const legocommentaire = document.createElement('p')
+    legocommentaire.innerText = element.commentaire
+    group.appendChild(legocommentaire)
+
     const divimages = document.createElement('div')
     divimages.classList.add('slider')
     articlelego.appendChild(divimages)
@@ -410,7 +421,7 @@ function showlego() {
     const imglego4 = document.createElement('img')
     imglego4.src = element.image4
     imgcontainer.appendChild(imglego4)
-    
+
     const imglego5 = document.createElement('img')
     imglego5.src = element.image5
     imgcontainer.appendChild(imglego5)
@@ -418,26 +429,15 @@ function showlego() {
     const imglegoretour = document.createElement('img')
     imglegoretour.src = element.image1
     imgcontainer.appendChild(imglegoretour)
-    
-    const group = document.createElement('hgroup')
-    articlelego.appendChild(group)
-    
-    const legotitre = document.createElement('h2')
-    legotitre.innerText = element.titre
-    group.appendChild(legotitre)
-    
-    const legocommentaire = document.createElement('p')
-    legocommentaire.innerText = element.commentaire
-    group.appendChild(legocommentaire)
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  
-  // Animation des particules
-  
+
+   // Animation des particules
+
   // Création de l'élément canvas
-  
+
   const canvas = document.createElement('canvas');
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -564,4 +564,7 @@ document.addEventListener('click', (e) => {
   showsetup()  
   showjeux()
   showlego()
+
+
+
 });

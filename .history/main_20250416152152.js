@@ -556,6 +556,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
+
 // Appel des fonctions qui affichent les différentes parties de la page
 
   showprojects()
@@ -564,4 +565,7 @@ document.addEventListener('click', (e) => {
   showsetup()  
   showjeux()
   showlego()
+
+
+
 });

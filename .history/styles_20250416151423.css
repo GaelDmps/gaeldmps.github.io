@@ -516,7 +516,7 @@ canvas {
     #header {
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: c;
         padding: 2rem auto;
         gap: 50%;
       }
@@ -525,7 +525,7 @@ canvas {
         text-align: center;
       }
       .burger-container {
-        right: calc(5%); /* Ajustement pour les écrans plus petits */
+        right: calc(5% + 70px); /* Ajustement pour les écrans plus petits */
     }
     #section1{
         margin-top: 15rem;

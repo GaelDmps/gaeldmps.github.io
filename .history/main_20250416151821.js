@@ -564,4 +564,7 @@ document.addEventListener('click', (e) => {
   showsetup()  
   showjeux()
   showlego()
+
+
+
 });

@@ -433,6 +433,20 @@ canvas {
     margin-bottom: 3rem;
     transition: position 0.5s ease-in-out;
 } 
+#navfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+}
+#hautdepage{
+    right: 0;
+    margin: 0 2rem;
+}
+.boutonhaut{
+    position:fixed;
+    bottom: 4rem;
+}
 
 
 
@@ -442,7 +456,7 @@ canvas {
 @media (max-width: 768px) {
     #header {
         justify-content: space-around; /* Centre les éléments au lieu de space-between */
-        padding: 2rem auto;
+        padding: 2rem 5%;
         gap: 20%; /* Espace entre le burger et l'image */
       }
       
@@ -474,11 +488,11 @@ canvas {
     }
     .position{
         flex-direction: column-reverse;
-        margin: 3rem auto;
+        margin: 3rem 10%;
     }
     .position-inverse{
         flex-direction: column;
-        margin: 3rem auto;
+        margin: 3rem 10%;
     }
     .slider{
         max-width: 100%;
@@ -509,6 +523,7 @@ canvas {
         font-size: 1rem;
     }
     header{
+        flex-direction: column-reverse;
         a{
             margin: 1rem;
         }
@@ -516,19 +531,21 @@ canvas {
     #header {
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-        padding: 2rem auto;
-        gap: 50%;
+        justify-content: space-between;
+        padding: 2rem 5%;
+        padding: 1.5rem 5%;
+        gap: 30px;
       }
       .burger-menu a {
         width: 100%;
+        margin: 5px 0;
         text-align: center;
       }
       .burger-container {
-        right: calc(5%); /* Ajustement pour les écrans plus petits */
+        right: calc(5% + 70px); /* Ajustement pour les écrans plus petits */
     }
     #section1{
-        margin-top: 15rem;
+        margin-top: 25rem;
     }
     #section2{
         h2{
