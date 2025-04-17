@@ -556,13 +556,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-// Création des particules
-const particles = [];
-const numberOfParticles = window.innerWidth > 768 ? 300 : 150; // Adapte le nombre selon la taille d'écran
+  // Création des particules
+  const particles = [];
+  const numberOfParticles = 300; // Nombre de particules à créer sur la page
 
-for (let i = 0; i < numberOfParticles; i++) {
-  particles.push(new Particle());
-}
+  for (let i = 0; i < numberOfParticles; i++) {
+    particles.push(new Particle());
+  }
 
   // Boucle d'animation
   function animate() {

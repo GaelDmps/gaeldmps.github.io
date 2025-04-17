@@ -527,9 +527,9 @@ canvas {
     #header {
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 1rem;
-        gap: 3rem;
+        gap: 0;
       }
       
       .burger-container {
@@ -550,7 +550,7 @@ canvas {
         margin: 0.25rem 0;
         font-size: 0.9rem;
         text-align: center;
-        box-sizing: border-box;
+        box-sizing: border-box; /* S'assurer que padding et bordure sont inclus dans la largeur */
       }
     #section1{
         margin-top: 15rem;

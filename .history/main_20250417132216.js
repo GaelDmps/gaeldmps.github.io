@@ -526,7 +526,7 @@ document.addEventListener('DOMContentLoaded', () => {
     constructor() {
       this.x = Math.random() * canvas.width;
       this.y = Math.random() * canvas.height;
-      this.size = Math.random() * 5 + 1;
+      this.size = Math.random() * 6 + 1;
       this.speedX = Math.random() * 1 - 0.5;
       this.speedY = Math.random() * 1 - 0.5;
       this.color = 'rgb(18, 205, 25)';
@@ -556,13 +556,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-// Création des particules
-const particles = [];
-const numberOfParticles = window.innerWidth > 768 ? 300 : 150; // Adapte le nombre selon la taille d'écran
+  // Création des particules
+  const particles = [];
+  const numberOfParticles = 300; // Nombre de particules à créer sur la page
 
-for (let i = 0; i < numberOfParticles; i++) {
-  particles.push(new Particle());
-}
+  for (let i = 0; i < numberOfParticles; i++) {
+    particles.push(new Particle());
+  }
 
   // Boucle d'animation
   function animate() {

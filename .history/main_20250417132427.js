@@ -558,7 +558,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Création des particules
 const particles = [];
-const numberOfParticles = window.innerWidth > 768 ? 300 : 150; // Adapte le nombre selon la taille d'écran
+const numberOfParticles = window.innerWidth > 768 ? 200 : 100; // Adapte le nombre selon la taille d'écran
 
 for (let i = 0; i < numberOfParticles; i++) {
   particles.push(new Particle());
