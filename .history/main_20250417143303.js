@@ -141,8 +141,7 @@ const lego = [
     image4: "./img/lego/pots1.jpg",
     image5: "./img/lego/roses.jpg",
     titre: "Les Lego",
-    commentaire1: "Les Lego une de mes passions depuis mon plus jeune âge. Du plus loin que je me souvienne j'ai toujours été entouré de Lego, une source de créativité sans limite. J'ai sans doute commencé a jouer a minecraft parce que j'ai énormémément joué aux Lego avant. Plus récemment j'ai commencé une collection de Lego représentant des plantes.",
-    commentaire2: "Je préfère davantage les Lego qui peuvent servir de décoration par rapport à avant quand je préférais les Lego pour avoir des personnages et créer des histoires. Je trouve les détails des plantes magnifiques et je suis impatient de voir les prochaines qui vont sortir pour possiblement les acheter.",
+    commentaire: "Les Lego une de mes passions depuis mon plus jeune âge. Du plus loin que je me souvienne j'ai toujours été entouré de Lego, une source de créativité sans limite. J'ai sans doute commencé a jouer a minecraft parce que j'ai énormémément joué aux Lego avant. Plus récemment j'ai commencé une collection de Lego représentant des plantes. Je préfère davantage les Lego qui peuvent servir de décoration par rapport à avant quand je préférais les Lego pour avoir des personnages et créer des histoires. Je trouve les détails des plantes magnifiques et je suis impatient de voir les prochaines qui vont sortir pour possiblement les acheter.",
     alt1: "Lego camera disney",
     alt2: "Lego chrysantheme",
     alt3: "Lego Marvel",
@@ -527,13 +526,9 @@ function showlego() {
     legotitre.innerText = element.titre
     group.appendChild(legotitre)
     
-    const legocommentaire1 = document.createElement('p')
-    legocommentaire1.innerText = element.commentaire1
-    group.appendChild(legocommentaire1)
-    
-    const legocommentaire2 = document.createElement('p')
-    legocommentaire2.innerText = element.commentaire2
-    group.appendChild(legocommentaire2)
+    const legocommentaire = document.createElement('p')
+    legocommentaire.innerText = element.commentaire
+    group.appendChild(legocommentaire)
   }
 }
 

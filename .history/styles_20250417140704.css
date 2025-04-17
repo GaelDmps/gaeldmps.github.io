@@ -64,7 +64,7 @@ h3{
 }
 p {
     font-family: 'paragraphe';
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     width: 90%;
     margin: 1rem auto;
     text-align: center;
@@ -332,7 +332,6 @@ canvas {
 #section3{
     max-width: 90%;
     margin:10rem auto 5rem auto;
-
 }
 .title{
     background: var(--Fond-des-Sections);

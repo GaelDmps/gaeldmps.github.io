@@ -534,6 +534,10 @@ function showlego() {
     const legocommentaire2 = document.createElement('p')
     legocommentaire2.innerText = element.commentaire2
     group.appendChild(legocommentaire2)
+    
+    const legocommentaire = document.createElement('p')
+    legocommentaire.innerText = element.commentaire
+    group.appendChild(legocommentaire)
   }
 }
 
