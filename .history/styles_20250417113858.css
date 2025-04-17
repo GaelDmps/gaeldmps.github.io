@@ -80,7 +80,7 @@ main {
 
 
 /* ------------------------------------------------HEADER---------------------------------------------------------- */
-header {
+#header {
     max-width: 100%;
     width: 100%;
     top: 0;
@@ -497,7 +497,7 @@ canvas {
     footer{
         nav{
             display: grid;
-            grid-template-columns: repeat(3, 30%);
+            grid-template-columns: repeat(3, 40%);
             grid-template-rows: repeat(2, auto);
         a{
             margin: 1rem;
