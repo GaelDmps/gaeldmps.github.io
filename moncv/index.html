@@ -1,8 +1,11 @@
-<html lang="fr">
+<html lang="fr" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Gaël Deschamps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,21 +15,22 @@
         <img src="img/photocv.webp" alt="">
         <div>
         <h1>Gaël Deschamps</h1>
-        <p>Recherche de stage en développement web. <br> Du 26 Mai 2025 au 24 Juillet 2025.</p>
+        <p>Recherche emploi développeur Web Front-end. <br> Disponible immédiatement.</p>
         </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Basculer le thème" title="Basculer le thème">🌙</button>
     </header>
 
 <main>
     <div id="gauche">
-    <section id="profil">
+    <section id="profil" class="card reveal">
         <h2>Profil</h2>
         <ul>
-            <li>Téléphone : 06.--.--.--.--</li>
             <li>Mail : gaeldeschampsdevweb@gmail.com</li>
-            <li>Age : 22 ans</li>
+            <li>Age : 23 ans</li>
+            <li>Permis de conduire : en cours</li>
         </ul>
     </section>
-<section id="compétences">
+<section id="compétences" class="card reveal">
     <h2>Compétences</h2>
     <ul>
         <li>HTML</li>
@@ -38,8 +42,8 @@
         <li>Symfony</li>
         <li>Bootstrap</li>
         <li>Figma</li>
-        <li>Anglais expérimenté</li>
         <li>Électronique (J'ai monté mon pc en 2022)</li>
+        <li>Anglais expérimenté</li>
         <li>Maîtrse du pack office</li>
         <li>Maîtrise logiciel comptable Cegid</li>
         <li>Gestion de projet</li>
@@ -47,7 +51,7 @@
         <li>Management et Marketing</li>
     </ul>
 </section>
-<section id="loisirs">
+<section id="loisirs" class="card reveal">
     <h2>Loisirs</h2>
     <ul>
         <li>Films et Séries</li>
@@ -60,19 +64,20 @@
 </section>
 </div>
 <div id="droite">
-    <section id="profil">
+    <section id="profil" class="card reveal">
         <h2>Profil</h2>
         <ul>
-        <li>Téléphone : 06.--.--.--.--</li>
         <li>Mail : gaeldeschampsdevweb@gmail.com</li>
         <li>Age : 22 ans</li>
+        <li>Permis de conduire : en cours</li>
         </ul>
     </section>
-<section id="formations">
+<section id="formations" class="card reveal">
     <h2>Mes formations</h2>
     <article>
         <h3>Formation en développement web</h3>
-        <p>Le 13 janvier 2025 j'ai commencé une formation en développement web au sein de l'organisme OnlineFormapro qui durera jusqu'au 18 septembre 2025. J'y ai appris jusque là les langages HTML et CSS ainsi que les bases de l'outil Bootstrap. J'y apprendrai également les langages Javascript, PHP et SQL mais aussi l'outil React.</p>
+        <p>Du 13 janvier au 18 septembre 2025, j'ai suivi une formation en développement web au sein de l'organisme OnlineFormapro. J'ai obtenu mon titre professionnel de développeur web uniquement en Front-end. J'y ai appris les langages HTML, CSS, Javascript ainsi que l'outil Bootstrap et React.</p>
+    </article>
     <article>
         <h3>BUT GEA (Gestion des entreprises et des administrations)</h3>
         <p>Entre 2021 et 2024 j'ai suivi des études en gestion comptable et financière au sein de l'IUT GEA jusqu'en deuxième année.</p>
@@ -80,8 +85,12 @@
         <p>J'ai obtenu mon BAC STMG en 2021 avec la mention assez-bien.</p>
     </article>
 </section>
-<section id="expériences">
+<section id="expériences" class="card reveal">
     <h2>Parcours professionnel</h2>
+    <article>
+        <h3>Stage chez Noemy's Technologies</h3>
+        <p>Du 26 mai au 24 juillet 2025, j'ai effectué un stage dans cette startup où j'ai collaboré au développement d'un outil professionnel sous forme de chatbot qui fait de la recherche en base de données. J'ai réalisé le Front-end avec React, ce qui m'a permis d'apprendre les bases de React tout en travaillant sur un projet concret.</p>
+    </article>
     <article>
         <h3>Immerison de découverte chez FcNet</h3>
         <p>J'ai effectué du 25 au 29 novembre 2024 une immerison dans le service développement de FcNet pour découvrir le métier en situation réelle et confirmer mon idée de projet professionnel dans cette voie.</p>
@@ -113,10 +122,10 @@
         <nav>
             <p>Me contacter:</p>
             <article><img src="img/mail.png" alt=""><span>Mail : gaeldeschampsdevweb@gmail.com</span></article>
-            <article><img src="img/tel.png" alt=""><span>Téléphone : 06.--.--.--.--</span></article>
             <a href="#header"><img src="img/angle-petit-haut.png" alt=""></a>
         </nav>
         <p>&copy; 2025 DESCHAMPS Gaël. Tous droits réservés. </p>
     </footer>
+    <script src="main.js" defer></script>
 </body>
 </html>
