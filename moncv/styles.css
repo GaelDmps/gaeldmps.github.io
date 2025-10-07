@@ -185,6 +185,16 @@ main h2{
     box-shadow: 0 10px 20px var(--shadow);
 }
 
+/* Padding interne pour les articles */
+#formations > article{
+    padding: .85rem 1rem;
+    border-radius: 12px;
+}
+#expériences > article{
+    padding: .85rem 1rem;
+    border-radius: 12px;
+}
+
 /* Révélations au scroll */
 .reveal{
     opacity: 0;
