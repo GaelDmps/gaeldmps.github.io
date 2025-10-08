@@ -170,6 +170,7 @@ function showprojects() {
     const projetimg = document.createElement('img')
     projetimg.src = element.image
     projetimg.alt = element.alt
+    makeLazy(projetimg)
     projetarticle.appendChild(projetimg)
 
     const projetexplain = document.createElement('p')
@@ -210,31 +211,37 @@ function showescalade() {
     const imgescalade1 = document.createElement('img')
     imgescalade1.src = element.image1
     imgescalade1.alt = element.alt1
+    makeLazy(imgescalade1)
     imgcontainer.appendChild(imgescalade1)
     
     const imgescalade2 = document.createElement('img')
     imgescalade2.src = element.image2
     imgescalade2.alt = element.alt2
+    makeLazy(imgescalade2)
     imgcontainer.appendChild(imgescalade2)
     
     const imgescalade3 = document.createElement('img')
     imgescalade3.src = element.image3
     imgescalade3.alt = element.alt3
+    makeLazy(imgescalade3)
     imgcontainer.appendChild(imgescalade3)
     
     const imgescalade4 = document.createElement('img')
     imgescalade4.src = element.image4
     imgescalade4.alt = element.alt4
+    makeLazy(imgescalade4)
     imgcontainer.appendChild(imgescalade4)
 
     const imgescalade5 = document.createElement('img')
     imgescalade5.src = element.image5
     imgescalade5.alt = element.alt5
+    makeLazy(imgescalade5)
     imgcontainer.appendChild(imgescalade5)
     
     const imgescaladeretour = document.createElement('img')
     imgescaladeretour.src = element.image1
     imgescaladeretour.alt = element.alt1
+    makeLazy(imgescaladeretour)
     imgcontainer.appendChild(imgescaladeretour)
 
     const group = document.createElement('hgroup')
@@ -297,31 +304,37 @@ function showescalade() {
       const imgmanga1 = document.createElement('img')
       imgmanga1.src = element.image1
       imgmanga1.alt = element.alt1
+      makeLazy(imgmanga1)
       imgcontainer.appendChild(imgmanga1)
       
       const imgmanga2 = document.createElement('img')
       imgmanga2.src = element.image2
       imgmanga2.alt = element.alt2
+      makeLazy(imgmanga2)
       imgcontainer.appendChild(imgmanga2)
       
       const imgmanga3 = document.createElement('img')
       imgmanga3.src = element.image3
       imgmanga3.alt = element.alt3
+      makeLazy(imgmanga3)
       imgcontainer.appendChild(imgmanga3)
       
       const imgmanga4 = document.createElement('img')
       imgmanga4.src = element.image4
       imgmanga4.alt = element.alt4
+      makeLazy(imgmanga4)
       imgcontainer.appendChild(imgmanga4)
   
       const imgmanga5 = document.createElement('img')
       imgmanga5.src = element.image5
       imgmanga5.alt = element.alt5
+      makeLazy(imgmanga5)
       imgcontainer.appendChild(imgmanga5)
       
       const imgmangaretour = document.createElement('img')
       imgmangaretour.src = element.image1
       imgmangaretour.alt = element.alt1
+      makeLazy(imgmangaretour)
       imgcontainer.appendChild(imgmangaretour)
   
     }
@@ -556,6 +569,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const ctx = canvas.getContext('2d');
 
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
   // Classe Particule qui définit leurs propriétés et comportements
   class Particle {
     constructor() {
@@ -587,19 +602,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Ajouter l'ombre à la particule
       ctx.shadowColor = this.shadowColor;
-      ctx.shadowBlur = 10; // Intensité de l'ombre
+      ctx.shadowBlur = isMobile ? 4 : 10; // Intensité de l'ombre
     }
   }
 
 // Création des particules
 const particles = [];
-const numberOfParticles = window.innerWidth > 768 ? 300 : 150; // Adapte le nombre selon la taille d'écran
+const numberOfParticles = isMobile ? 50 : 180; // Réduit fortement sur mobile
 
 for (let i = 0; i < numberOfParticles; i++) {
   particles.push(new Particle());
 }
 
   // Boucle d'animation
+  let animationId;
   function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -608,7 +624,7 @@ for (let i = 0; i < numberOfParticles; i++) {
       particles[i].draw();
     }
 
-    requestAnimationFrame(animate);
+    animationId = requestAnimationFrame(animate);
   }
 
   // Gestion du redimensionnement de la fenêtre
@@ -619,6 +635,15 @@ for (let i = 0; i < numberOfParticles; i++) {
 
   // Démarrage de l'animation
   animate();
+
+  // Pause l'animation quand l'onglet est masqué
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      if (animationId) cancelAnimationFrame(animationId);
+    } else {
+      animate();
+    }
+  });
 
 
   // Event scroll pour le header et le bouton de retour en haut de page
@@ -662,12 +687,35 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Appel des fonctions qui affichent les différentes parties de la page
+// Helper: rendre les images lazy
+function makeLazy(img) {
+  img.loading = 'lazy';
+  img.decoding = 'async';
+  return img;
+}
 
-  showprojects()
-  showescalade()
-  showmanga()
-  showsetup()  
-  showjeux()
-  showlego()
+// Rendu différé des sections (lazy render)
+function lazyRender(targetId, renderFn) {
+  const targetEl = document.getElementById(targetId);
+  if (!targetEl) {
+    renderFn();
+    return;
+  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        renderFn();
+        observer.disconnect();
+      }
+    });
+  }, { rootMargin: '200px' });
+  observer.observe(targetEl);
+}
+
+  lazyRender('projets', showprojects);
+  lazyRender('escalade', showescalade);
+  lazyRender('manga', showmanga);
+  lazyRender('setup', showsetup);
+  lazyRender('jeux', showjeux);
+  lazyRender('lego', showlego);
 });
