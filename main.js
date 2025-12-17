@@ -3,58 +3,58 @@
 
 const projets = [
   {
+    image: "./projets/images/projet-weekend.png",
+    titre: "Weekend entre amis",
+    explication: "Ce site je l'ai fait pour pouvoir planifier un weekend entre amis en utilisant du HTML, du CSS et du JavaScript. Faire ce genre de pages me permet de pratiquer et d'apprendre de nouvelles choses.",
+    bouton: "Voir la page",
+    lien: "./projets/weekend-corp/index.html",
+    page: "_blank",
+    alt: "Weekend entre amis"
+  },
+  {
+    image: "./projets/images/projet-goodiiz.png",
+    titre: "Page de présentation de posters",
+    explication: "Ce site je l'ai fait pour pouvoir présenter des posters en utilisant du HTML, du CSS et du JavaScript (La largeur de la page est bloquée pour montrer ce que ça donne sur la borne qui les affiche en boutique). et il est visible dans la boutique Goodiiz au 79 Grande Rue, 25000 Besançon, France",
+    bouton: "Voir la page",
+    lien: "./projets/posters-goodiiz/index.html",
+    page: "_blank",
+    alt: "Page de présentation de posters"
+  },
+  {
+    image: "./projets/images/halloween-2025.png",
+    titre: "Soirée d'halloween entre amis",
+    explication: "Cette page présente le programme de la soirée d'halloween que nous avons organisée avec mes amis. Elle est interactive et permet de calculer le budget par personne, de voir le programme de la soirée et les personnes qui sont présentes.",
+    bouton: "Voir la page",
+    lien: "./projets/halloween-2025/index.html",
+    page: "_blank",
+    alt: "Soirée d'halloween entre amis"
+  },
+  {
+    image: "./projets/images/nouvel-an.png",
+    titre: "Soirée de nouvel an entre amis",
+    explication: "Cette page présente le programme de la soirée de nouvel an que nous avons organisée avec mes amis. Elle permet de voir les personnes présentes, des idées d'activités et de courses a acheter pour la soirée. Ce site ets en plusieurs pages reliées par le index.html et les autres pages sont accessibles via les liens dans la page d'accueil.",
+    bouton: "Voir la page",
+    lien: "./projets/new-year/index.html",
+    page: "_blank",
+    alt: "Soirée de nouvel an entre amis"
+  },
+  {
     image: "./projets/images/boutique.png",
     titre: "Site boutique en ligne",
-    explication: "Cette page est un site de boutique en ligne faite avec du HTML, du CSS et du JavaScript pour les fonctions de tri, de wishlist et de panier.",
+    explication: "Cette page est un site de boutique en ligne faite avec du HTML, du CSS et du JavaScript pour les fonctions de tri, de wishlist et de panier. Je l'ai fait en groupe durant ma formation.",
     bouton: "Voir la page",
     lien: "./projets/boutique/index.html",
     page: "_blank",
     alt: "Site boutique en ligne"
   },
   {
-    image: "./projets/images/liste.webp",
-    titre: "Trier une liste en JavaScript",
-    explication: "Sur cette page il est possible de trier une liste. J'ai fait ça en travaux dirigés en groupe.",
-    bouton: "Voir la page",
-    lien: "./projets/liste-triee/index.html",
-    page: "_blank",
-    alt: "Trier une liste en JavaScript"
-  },
-  {
-    image: "./projets/images/burger.png",
-    titre: "Page Menu Burger",
-    explication: "J'ai eu l'occasion de faire un menu burger en JavaScript.",
-    bouton: "Voir la page",
-    lien: "./projets/menu-burger/index.html",
-    page: "_blank",
-    alt: "Page Menu Burger"
-  },
-  {
-    image: "./projets/images/horlogejs.png",
-    titre: "Horloge en temps réel",
-    explication: "Sur cette page une horloge qui affiche l'heure en temps réel avec JavaScript.",
-    bouton: "Voir la page",
-    lien: "./projets/horloge-simple/index.html",
-    page: "_blank",
-    alt: "Horloge en temps réel"
-  },
-  {
     image: "./projets/images/loto.png",
     titre: "Le loto",
-    explication: "Jouez au loto, il tire des chiffres au hasard entre 1 et 49.",
+    explication: "Jouez au loto, il tire des chiffres au hasard entre 1 et 49. Je l'ai fait en groupe durant ma formation.",
     bouton: "Voir la page",
     lien: "./projets/tirageloto/index.html",
     page: "_blank",
     alt: "Le loto"
-  },
-  {
-    image: "./projets/images/lancerdes.png",
-    titre: "Simulateur de lancé de dé",
-    explication: "Sur cette page vous pourrez retrouver un simlateur de lancé de dé à 6 faces.",
-    bouton: "Voir la page",
-    lien: "./projets/lance-de-des/index.html",
-    page: "_blank",
-    alt: "Simulateur de lancé de dé"
   },
 ]
 
@@ -80,19 +80,19 @@ const escalade = [
 // création de la deuxième partie de la section passions --> la div manga
 const manga = [
   {
-    image1: "./img/manga/carnets-tome-14.jpg",
-    image2: "./img/manga/carnets.jpg",
-    image3: "./img/manga/frieren2.jpg",
-    image4: "./img/manga/one-piece-100.jpg",
+    image1: "./img/manga/carnets.webp",
+    image2: "./img/manga/demon-slayer.webp",
+    image3: "./img/manga/frieren.webp",
+    image4: "./img/manga/one-piece.jpg",
     image5: "./img/manga/sun-ken-rock.jpg",
     titre: "Les manga",
     commentaire1: "Depuis quelques années je lis des manga. Ces oeuvres aux histoires variées et pleines de magie, de combats ou simplement de planches a couper le souffle m'ont beaucoup apporté depuis le début. ",
     commentaire2: "Voir mes personnages préférés se surpasser pour obtenir ce qu'ils veulent et atteindre leurs objectifs m'a inspiré et je fais de mon mieux pour ateindre mes propres objectifs personnels ou professionnels.",
-    alt1: "Tome 14 de Carnets de l'apothicaire",
-    alt2: "Carnets de l'apothicaire autres tomes",
-    alt3: "Tome de Frieren",
-    alt4: "Tome 100 de One Piece",
-    alt5: "Tome de Sun Ken Rock",
+    alt1: "Les Carnets de l'apothicaire",
+    alt2: "Demon slayer collection",
+    alt3: "Tomes de Frieren",
+    alt4: "ma collection one piece",
+    alt5: "Tomes de Sun Ken Rock",
   }]
   
 // création de la troisième partie de la section passions --> la div setup
@@ -117,37 +117,37 @@ const setup = [
 const jeux = [
   {
     image1: "./img/jeux/auto-craft.png",
-    image2: "./img/jeux/horreur-1.png",
-    image3: "./img/jeux/horreur-2.png",
-    image4: "./img/jeux/subnautica-1.jpg",
+    image2: "./img/jeux/orcs-rtm.webp",
+    image3: "./img/jeux/fight-rtm.webp",
+    image4: "./img/jeux/ossuaire-rtm.webp",
     image5: "./img/jeux/subnautica.jpg",
     titre: "Les Jeux vidéo",
     commentaire1: "Quand j'étais petit je jouais sur la Wii, puis la Xbox One pour passer sur ordinateur. Je dois avoir une centaine de jeux sur mon PC, des jeux de plateau, de logique, d'horreur, de survie, j'ai tout type de jeux mais un en particulier me fait toujours autant rêver depuis que je peux jouer c'est Minecraft.",
     commentaire2: "Minecraft avec des mods qui ajoutent tout type de contenu que ça soit des créatures effrayantes, des biomes, ou même le mod le plus complet que j'ai trouvé jusqu'à aujourd'hui, le mod Create qui ajoute des mécanismes qui servent a tout faire. Transporter des objets, en fabriquer d'autres, les stocker et automatiser tout ce qui est possible et imaginables.",
     commentaire3: "Ce mod qui allie logique et imagination m'a fait me lancer dans le code, construire une structure pour tout relier et donner un résultat qui est esthétique, fonctionnel et pratique c'est tout ce que j'aime faire.",
     alt1: "machine minecraft pour Auto Craft",
-    alt2: "mod minecraft d'horreur 1",
-    alt3: "mod minecraft d'horreur 2",
-    alt4: "Subnautica abysses",
+    alt2: "combat contre des orcs dans le jeu return to moria",
+    alt3: "un autre combat dans le jeu return to moria",
+    alt4: "ossuaire dans return to moria",
     alt5: "Subnautica couché de soleil",
 }]
 
 // création de la cinquième partie de la section passions --> la div lego
 const lego = [
   {
-    image1: "./img/lego/camera-lego.png",
+    image1: "./img/lego/mineraux.webp",
     image2: "./img/lego/fleur.jpg",
     image3: "./img/lego/lego-marvel.jpg",
-    image4: "./img/lego/pots1.jpg",
-    image5: "./img/lego/roses.jpg",
+    image4: "./img/lego/f1.webp",
+    image5: "./img/lego/papillon.webp",
     titre: "Les Lego",
     commentaire1: "Les Lego une de mes passions depuis mon plus jeune âge. Du plus loin que je me souvienne j'ai toujours été entouré de Lego, une source de créativité sans limite. J'ai sans doute commencé a jouer a minecraft parce que j'ai énormémément joué aux Lego avant. Plus récemment j'ai commencé une collection de Lego représentant des plantes.",
     commentaire2: "Je préfère davantage les Lego qui peuvent servir de décoration par rapport à avant quand je préférais les Lego pour avoir des personnages et créer des histoires. Je trouve les détails des plantes magnifiques et je suis impatient de voir les prochaines qui vont sortir pour possiblement les acheter.",
-    alt1: "Lego camera disney",
+    alt1: "Set lego minéraux",
     alt2: "Lego chrysantheme",
     alt3: "Lego Marvel",
-    alt4: "Lego pots de fleurs",
-    alt5: "Lego roses",
+    alt4: "Lego Formule 1",
+    alt5: "Lego insectes : papillon",
 }]
 
 
@@ -268,7 +268,7 @@ function showescalade() {
     for(const element of manga){
   
       const articlemanga = document.createElement('article')
-      articlemanga.classList.add('position-inverse')
+      articlemanga.classList.add('position')
       displaymanga.appendChild(articlemanga)
 
       const group = document.createElement('hgroup')
@@ -479,7 +479,7 @@ function showlego() {
   for(const element of lego){
 
     const articlelego = document.createElement('article')
-    articlelego.classList.add('position')
+    articlelego.classList.add('position-inverse')
     displaylego.appendChild(articlelego)
     
     const divimages = document.createElement('div')
@@ -662,12 +662,31 @@ document.addEventListener('click', (e) => {
   }
 });
 
+
+function calculerAge() {
+  const naissance = new Date(2002, 7, 30); // ⚠️ mois = 7 car janvier = 0
+  const aujourdHui = new Date();
+
+  let age = aujourdHui.getFullYear() - naissance.getFullYear();
+  const anniversairePasse =
+    aujourdHui.getMonth() > naissance.getMonth() ||
+    (aujourdHui.getMonth() === naissance.getMonth() && aujourdHui.getDate() >= naissance.getDate());
+
+  if (!anniversairePasse) {
+    age--;
+  }
+
+  document.getElementById("age").textContent = age;
+}
+
+
 // Appel des fonctions qui affichent les différentes parties de la page
 
-  showprojects()
-  showescalade()
-  showmanga()
-  showsetup()  
-  showjeux()
-  showlego()
+showprojects()
+showescalade()
+showmanga()
+showsetup()  
+showjeux()
+showlego()
+calculerAge();
 });

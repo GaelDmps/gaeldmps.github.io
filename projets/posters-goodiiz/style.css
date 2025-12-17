@@ -1,0 +1,792 @@
+/* ========================================
+   VARIABLES CSS
+======================================== */
+:root {
+    --couleur-primaire: #F8C900;
+    --couleur-secondaire: #000000;
+    --couleur-texte: #FFFFFF;
+    --couleur-fond: #FFFFFF;
+    --couleur-ombre: rgba(0, 0, 0, 0.2);
+    --couleur-texte-sombre: #000000;
+}
+
+/* ========================================
+   STYLISATION DE LA BARRE DE DÉFILEMENT
+======================================== */
+
+/* Pour les navigateurs WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px; /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--couleur-fond); /* Couleur de fond de la piste */
+    border-radius: 10px;
+    border: 2px solid var(--couleur-primaire); /* Bordure jaune */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--couleur-primaire) 0%, #e6b800 100%); /* Dégradé jaune */
+    border-radius: 10px;
+    border: 2px solid var(--couleur-secondaire); /* Bordure noire */
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #e6b800 0%, var(--couleur-primaire) 100%); /* Dégradé inversé au survol */
+    transform: scale(1.1);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--couleur-secondaire); /* Noir quand on clique */
+}
+
+/* Pour Firefox */
+html {
+    scrollbar-width: thin; /* Barre fine */
+    scrollbar-color: var(--couleur-primaire) var(--couleur-fond); /* Couleur du curseur et de la piste */
+}
+
+/* Style spécifique pour la section des posters */
+.posters-section::-webkit-scrollbar {
+    width: 14px; /* Un peu plus large pour la section posters */
+}
+
+.posters-section::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    border: 2px solid var(--couleur-primaire);
+}
+
+.posters-section::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--couleur-primaire) 0%, var(--couleur-secondaire) 100%);
+    border-radius: 12px;
+    border: 1px solid var(--couleur-fond);
+}
+
+.posters-section::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--couleur-secondaire) 0%, var(--couleur-primaire) 100%);
+}
+
+/* ========================================
+   RESET ET STYLES DE BASE
+======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+/* ----------------------------------------------------------Conteneur d'application fixe à 1024px ----------------------------------------------------------*/
+.app {
+    width: 1024px;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+} 
+
+
+/* ========================================
+   HEADER
+======================================== */
+header {
+    z-index: 2;
+    position: relative;
+    background: transparent;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 10rem;
+    width: auto;
+}
+.titre{
+    justify-items: center;
+}
+
+.titre h1 {
+    margin-bottom: 0.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--couleur-primaire);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: 0.125rem solid var(--couleur-secondaire);
+}
+
+.titre p {
+    margin-top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--couleur-primaire);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: 0.125rem solid var(--couleur-secondaire);
+}
+
+
+#prix {
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--couleur-primaire);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    margin: 0;
+    border: 0.125rem solid var(--couleur-secondaire);
+}
+/* ========================================
+   NAVIGATION
+======================================== */
+nav {
+    z-index: 2;
+    position: relative;
+}
+
+/* ========================================
+   CONTENU PRINCIPAL
+======================================== */
+main {
+    z-index: 2;
+    position: relative;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+footer {
+    z-index: 2;
+    position: relative;
+}
+
+/* ========================================
+   SECTIONS CARROUSEL
+======================================== */
+.carousel-section {
+    margin: 0;
+    padding: 3rem 2rem;
+    border-radius: 0;
+}
+
+/* Séparateur entre header et première section */
+.section-separator {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: -3rem auto 0 auto;
+    position: absolute;
+    z-index: 5;
+    mix-blend-mode: normal;
+    left: 0;
+    right: 0;
+}
+
+/* Séparateur noir entre sections jaune et noire */
+.section-separator-black {
+    width: 100%;
+    height: 9rem;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: -4.5rem auto 0 auto;
+    position: absolute;
+    z-index: 5;
+    mix-blend-mode: normal;
+    left: 0;
+    right: 0;
+}
+
+/* Séparateur blanc entre sections noire et blanche */
+.section-separator-white {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: -4.4rem auto 0 auto;
+    position: absolute;
+    z-index: 5;
+    mix-blend-mode: normal;
+    left: 0;
+    right: 0;
+}
+
+/* Section Cinéma - Fond jaune */
+.carousel-section:first-of-type {
+    background: var(--couleur-primaire);
+}
+
+/* Section Famille & Fantasy - Fond noir */
+.carousel-section:nth-of-type(2) {
+    background: var(--couleur-secondaire);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--couleur-secondaire);
+}
+
+/* Titre de la section Famille & Fantasy - Blanc sur fond noir */
+.carousel-section:nth-of-type(2) .section-title {
+    color: var(--couleur-texte);
+}
+/* 
+.carousel-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1rem 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+    padding: 0 1rem;
+} */
+
+/* Nouvelle disposition en grille pour les catégories */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne */
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+
+/* ========================================
+   CARTES DE CATÉGORIES - STYLES DE BASE
+======================================== */
+.category-card {
+    background: var(--couleur-primaire);
+    color: var(--couleur-texte-sombre);
+    padding: 2rem;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: 18rem;
+    height: 27rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    position: relative;
+    flex-shrink: 0;
+    letter-spacing: 0.05rem;
+    line-height: 1.3;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.category-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.05rem;
+}
+
+/* Variante quand une image d'exposition est appliquée */
+.category-card.with-expo-bg {
+    color: var(--couleur-texte);
+}
+
+.category-card.with-expo-bg h3 {
+    color: var(--couleur-texte);
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 0.6rem 1rem;
+    border-radius: 0.8rem;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.4);
+}
+
+.category-card.with-expo-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.55) 100%);
+    border-radius: inherit;
+    z-index: 0;
+}
+
+/* ========================================
+   CARTES DE CATÉGORIES - COULEURS PAR LIGNES
+======================================== */
+
+/* Lignes 1-2 : Fond jaune */
+.category-card:nth-child(-n+6) {
+    background: var(--couleur-primaire);
+    color: var(--couleur-texte-sombre);
+}
+
+/* Ligne 3 : Dégradé jaune vers blanc */
+.category-card:nth-child(n+7):nth-child(-n+9) {
+    background: linear-gradient(to bottom, var(--couleur-primaire) 10%, var(--couleur-fond) 60%);
+    color: var(--couleur-texte-sombre);
+}
+
+/* Ligne 4 : Fond blanc */
+.category-card:nth-child(n+10):nth-child(-n+12) {
+    background: var(--couleur-fond);
+    color: var(--couleur-texte-sombre);
+}
+
+/* Ligne 5 : Dégradé blanc vers noir */
+.category-card:nth-child(n+13):nth-child(-n+15) {
+    background: linear-gradient(to bottom, var(--couleur-fond) 10%, var(--couleur-secondaire) 80%);
+    color: var(--couleur-texte-sombre);
+}
+
+/* Lignes 6-7 : Fond noir */
+.category-card:nth-child(n+16) {
+    background: var(--couleur-secondaire);
+    color: var(--couleur-texte);
+}
+
+/* Section Cinéma - Cartes noires avec contour blanc */
+.carousel-section:first-of-type .category-card {
+    background: var(--couleur-secondaire);
+    color: var(--couleur-texte);
+    border: 5px solid var(--couleur-fond);
+}
+
+/* Section Famille & Fantasy - Cartes blanches avec contour jaune */
+.carousel-section:nth-of-type(2) .category-card {
+    background: var(--couleur-fond);
+    color: var(--couleur-texte-sombre);
+    border: 5px solid var(--couleur-primaire);
+}
+
+/* Section Séries & Horreur - Cartes jaunes avec contour noir */
+.carousel-section:nth-of-type(3) .category-card {
+    background: var(--couleur-primaire);
+    color: var(--couleur-texte-sombre);
+    border: 5px solid var(--couleur-secondaire);
+}
+
+/* ========================================
+   SECTION POSTERS
+======================================== */
+.posters-section {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100vh;
+    background: var(--couleur-fond);
+    z-index: 10;
+    overflow-y: auto;
+    padding: 2rem;
+}
+
+.posters-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--couleur-primaire);
+}
+
+.back-button {
+    background: var(--couleur-primaire);
+    color: var(--couleur-texte-sombre);
+    border: 2px solid var(--couleur-secondaire);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background: var(--couleur-secondaire);
+    color: var(--couleur-texte);
+}
+
+#posters-title {
+    font-size: 2.5rem;
+    color: var(--couleur-secondaire);
+    margin: 0;
+}
+
+.posters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+    justify-items: center;
+}
+
+.poster-item {
+    background: var(--couleur-fond);
+    border: 3px solid var(--couleur-primaire);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 18rem;
+    max-width: 18rem;
+}
+
+
+.poster-item img {
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+    display: block;
+}
+
+.poster-item h3 {
+    padding: 1rem 1rem 0.5rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--couleur-texte-sombre);
+    margin: 0;
+}
+
+/* Affichage du numéro (entre parenthèses) en rouge pour le mode admin */
+.admin-code-number {
+    color: #ff0000;
+    font-weight: 800;
+}
+
+/* Dimensions des posters */
+.poster-dimensions {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(248, 201, 0, 0.95); /* Jaune avec transparence */
+    color: var(--couleur-secondaire);
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid var(--couleur-secondaire);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+
+
+/* Style alternatif pour les dimensions - badge en haut à gauche */
+.poster-dimensions.top-left {
+    top: 8px;
+    left: 8px;
+    bottom: auto;
+    right: auto;
+}
+
+/* Ajustement pour les posters avec overlay de statut */
+.poster-item .status-overlay ~ .poster-dimensions {
+    bottom: 35px; /* Décaler vers le haut si overlay présent */
+}
+
+/* Styles pour les posters en commande - renforcer l'aspect non-cliquable */
+.poster-item img[style*="pointer-events: none"] {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    filter: grayscale(20%);
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.poster-item img[style*="pointer-events: none"]:hover {
+    opacity: 0.7 !important;
+    filter: grayscale(30%);
+}
+
+/* ========================================
+   ADMINISTRATION
+======================================== */
+.admin-controls {
+    margin-left: auto;
+}
+
+.admin-toggle-btn {
+    background: var(--couleur-secondaire);
+    color: var(--couleur-texte);
+    border: 2px solid var(--couleur-primaire);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.admin-toggle-btn:hover {
+    background: var(--couleur-primaire);
+    color: var(--couleur-texte-sombre);
+}
+
+.admin-toggle-btn.active {
+    background: #ff4444;
+    color: white;
+    border-color: #cc0000;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: calc(768px - 4rem);
+    max-width: calc(768px - 4rem);
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.modal-content h2 {
+    margin-bottom: 1.5rem;
+    color: var(--couleur-secondaire);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--couleur-secondaire);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--couleur-primaire);
+}
+
+.login-btn {
+    width: 100%;
+    background: var(--couleur-primaire);
+    color: var(--couleur-secondaire);
+    border: 2px solid var(--couleur-secondaire);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: var(--couleur-secondaire);
+    color: var(--couleur-texte);
+}
+
+.error-message {
+    color: #ff4444;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+/* Poster admin controls */
+.poster-admin-controls {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: none;
+}
+
+.poster-status-btn {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.poster-status-btn.en-commande {
+    background: rgba(255, 68, 68, 0.9);
+}
+
+.poster-status-btn.disponible {
+    background: rgba(34, 197, 94, 0.9);
+}
+
+.poster-status-btn:hover {
+    transform: scale(1.1);
+}
+
+/* ========================================
+   FONDS SPÉCIFIQUES POUR LES CATÉGORIES
+======================================== */
+
+/* Fond par défaut pour les pages de posters */
+.posters-section {
+    background: linear-gradient(135deg, 
+        rgba(248, 201, 0, 0.05) 0%, 
+        rgba(255, 255, 255, 0.98) 30%, 
+        rgba(248, 201, 0, 0.03) 70%, 
+        rgba(255, 255, 255, 0.95) 100%
+    );
+}
+
+/* CINÉMA - Fond jaune */
+.posters-section[data-category="Cinéma"] {
+    background: linear-gradient(135deg, 
+        rgba(248, 201, 0, 0.15) 0%, 
+        rgba(255, 248, 200, 0.8) 30%, 
+        rgba(248, 201, 0, 0.12) 70%, 
+        rgba(255, 252, 220, 0.9) 100%
+    );
+}
+
+/* BLOCKBUSTERS - Fond jaune (Marvel, DC Comics, Star Wars, etc.) */
+.posters-section[data-category="Marvel"],
+.posters-section[data-category="DC Comics"],
+.posters-section[data-category="Star Wars"],
+.posters-section[data-category="Indiana Jones"],
+.posters-section[data-category="Jurassic Park"],
+.posters-section[data-category="Transformers"] {
+    background: linear-gradient(135deg, 
+        rgba(248, 201, 0, 0.15) 0%, 
+        rgba(255, 248, 200, 0.8) 30%, 
+        rgba(248, 201, 0, 0.12) 70%, 
+        rgba(255, 252, 220, 0.9) 100%
+    );
+}
+
+/* FAMILLE - Fond fantasy (Disney, Harry Potter, etc.) */
+.posters-section[data-category="Disney"],
+.posters-section[data-category="Harry Potter"],
+.posters-section[data-category="Le Seigneur des Anneaux"],
+.posters-section[data-category="Les Goonies"],
+.posters-section[data-category="Retour vers le futur"],
+.posters-section[data-category="Teenage Mutant Ninja Turtles"] {
+    background: linear-gradient(135deg, 
+        rgba(138, 43, 226, 0.08) 0%, 
+        rgba(255, 240, 255, 0.9) 20%, 
+        rgba(75, 0, 130, 0.06) 40%, 
+        rgba(248, 248, 255, 0.95) 60%, 
+        rgba(138, 43, 226, 0.05) 80%, 
+        rgba(255, 250, 255, 0.9) 100%
+    );
+}
+
+/* NOIR - Fond sombre (Horreur) */
+.posters-section[data-category="Horreur"] {
+    background: #333333 !important;
+}
+
+/* Test alternatif avec classe */
+.posters-section.category-horreur {
+    background: #333333 !important;
+}
+
+/* SÉRIES - Fond jaune et noir */
+.posters-section[data-category="Friends"],
+.posters-section[data-category="Mercredi"],
+.posters-section[data-category="Stranger Things"],
+.posters-section[data-category="Peaky Blinders"],
+.posters-section[data-category="Rick et Morty"] {
+    background: linear-gradient(135deg, 
+        rgba(248, 201, 0, 0.25) 0%, 
+        rgba(40, 40, 40, 0.4) 25%, 
+        rgba(248, 201, 0, 0.2) 50%, 
+        rgba(30, 30, 30, 0.5) 75%, 
+        rgba(248, 201, 0, 0.3) 100%
+    ) !important;
+}
+
+/* ========================================
+   FOOTER - DROITS RÉSERVÉS
+======================================== */
+footer {
+    background: var(--couleur-secondaire);
+    color: var(--couleur-texte);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    border-top: 3px solid var(--couleur-primaire);
+}
+
+footer p {
+    margin: 0;
+    opacity: 0.8;
+}

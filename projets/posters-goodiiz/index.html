@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodiiz Posters</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="app">
+    <header>
+        <img src="Maquette/logo.png" alt="Logo Goodiiz" id="admin-login-btn" style="cursor: pointer;">
+        <div class="titre">
+            <h1 id="title">Les Posters</h1>
+            <p id="indications">Appuyez sur la catégorie pour trouver les posters</p>
+        </div>
+        <h2 id="prix">8€</h2>
+    </header>
+    <!-- Séparateur jaune -->
+    <img src="Maquette/Jaune.png" alt="Séparateur jaune" class="section-separator">
+    
+    <main>
+        <!-- Section 1: Cinéma & Blockbusters -->
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="category-card">
+                        <h3>Cinéma</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Marvel</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>DC Comics</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Star Wars</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Indiana Jones</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Jurassic Park</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Transformers</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Horreur</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Séparateur noir -->
+        <img src="Maquette/Noir.png" alt="Séparateur noir" class="section-separator-black">
+        
+        <!-- Section 2: Famille & Fantasy -->
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="category-card">
+                        <h3>Disney</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Harry Potter</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Le Seigneur des Anneaux</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Teenage Mutant Ninja Turtles</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Les Goonies</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Retour vers le futur</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Séparateur blanc -->
+        <img src="Maquette/Blanc.png" alt="Séparateur blanc" class="section-separator-white">
+        
+        <!-- Section 3: Séries & Horreur -->
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="category-card">
+                        <h3>Friends</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Mercredi</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Stranger Things</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Peaky Blinders</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Rick et Morty</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Divers</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Section d'affichage des posters -->
+    <section id="posters-section" class="posters-section" style="display: none;">
+        <div class="posters-header">
+            <button id="back-button" class="back-button">← Retour</button>
+            <h2 id="posters-title">Posters</h2>
+            <div id="admin-controls" class="admin-controls" style="display: none;">
+                <button id="toggle-admin-mode" class="admin-toggle-btn">Mode Admin: OFF</button>
+            </div>
+        </div>
+        <div id="posters-grid" class="posters-grid">
+            <!-- Les posters seront ajoutés dynamiquement ici -->
+        </div>
+    </section>
+
+    <!-- Modal de connexion administrateur -->
+    <div id="admin-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Connexion</h2>
+            <form id="admin-login-form">
+                <div class="form-group">
+                    <label for="admin-username">Nom d'utilisateur:</label>
+                    <input type="text" id="admin-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="admin-password">Mot de passe:</label>
+                    <input type="password" id="admin-password" name="password" required>
+                </div>
+                <button type="submit" class="login-btn">Se connecter</button>
+                <div id="login-error" class="error-message" style="display: none;">
+                    Identifiants incorrects
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 GOODIIZ Besançon- Tous droits réservés</p>
+    </footer>
+    </div>
+</body>
+</html>
