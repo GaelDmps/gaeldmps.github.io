@@ -445,6 +445,65 @@ canvas {
 
 /* ------------------------------------------------------------RESPONSIVE-------------------------------------------------- */
 
+@media (max-width: 1080px) {
+    #header {
+        justify-content: space-around;
+        padding: 2rem auto;
+        gap: 20%; /* Espace entre le burger et l'image */
+      }
+      
+      #header > a:not(.imageheader) {
+        display: none;
+      }
+      
+      .burger-container {
+        display: block;
+        order: 2;
+        margin: 0; /* Réinitialise les marges */
+      }
+      
+      .imageheader {
+        order: 1;
+        margin: 0; /* Réinitialise les marges */
+      }
+    .title{
+        margin: 0;
+        padding: 1rem;
+    }
+    #section1{
+        margin-top: 15rem;
+    }
+    #projets{
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: repeat(2, auto);
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+    .position{
+        flex-direction: column-reverse;
+        margin: 3rem auto;
+    }
+    .position-inverse{
+        flex-direction: column;
+        margin: 3rem auto;
+    }
+    .slider{
+        max-width: 100%;
+    }
+    .formulaire iframe {
+        width: 100%;
+    }
+    footer{
+        nav{
+            display: grid;
+            grid-template-columns: repeat(3, 30%);
+            grid-template-rows: repeat(2, auto);
+        a{
+            margin: 1rem;
+        }
+    }
+}
+}
 @media (max-width: 768px) {
     #header {
         justify-content: space-around;
