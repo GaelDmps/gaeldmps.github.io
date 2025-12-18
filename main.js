@@ -186,148 +186,6 @@ function showprojects() {
   
 }
 
-// Fonction pour afficher la section escalade
-function showescalade() {
-
-  const displayescalade = document.getElementById('escalade')
-
-  displayescalade.innerHTML = ""
-
-  for(const element of escalade){
-
-    const articleesc = document.createElement('article')
-    articleesc.classList.add('position')
-    displayescalade.appendChild(articleesc)
-
-    const divimages = document.createElement('div')
-    divimages.classList.add('slider')
-    articleesc.appendChild(divimages)
-    
-    const imgcontainer = document.createElement('div')
-    imgcontainer.classList.add('slider-img')
-    divimages.appendChild(imgcontainer)
-    
-    const imgescalade1 = document.createElement('img')
-    imgescalade1.src = element.image1
-    imgescalade1.alt = element.alt1
-    imgcontainer.appendChild(imgescalade1)
-    
-    const imgescalade2 = document.createElement('img')
-    imgescalade2.src = element.image2
-    imgescalade2.alt = element.alt2
-    imgcontainer.appendChild(imgescalade2)
-    
-    const imgescalade3 = document.createElement('img')
-    imgescalade3.src = element.image3
-    imgescalade3.alt = element.alt3
-    imgcontainer.appendChild(imgescalade3)
-    
-    const imgescalade4 = document.createElement('img')
-    imgescalade4.src = element.image4
-    imgescalade4.alt = element.alt4
-    imgcontainer.appendChild(imgescalade4)
-
-    const imgescalade5 = document.createElement('img')
-    imgescalade5.src = element.image5
-    imgescalade5.alt = element.alt5
-    imgcontainer.appendChild(imgescalade5)
-    
-    const imgescaladeretour = document.createElement('img')
-    imgescaladeretour.src = element.image1
-    imgescaladeretour.alt = element.alt1
-    imgcontainer.appendChild(imgescaladeretour)
-
-    const group = document.createElement('hgroup')
-    articleesc.appendChild(group)
-
-    const esctitre = document.createElement('h2')
-    esctitre.innerText = element.titre
-    group.appendChild(esctitre)
-
-    const esccommentaire1 = document.createElement('p')
-    esccommentaire1.innerText = element.commentaire1
-    group.appendChild(esccommentaire1)
-
-    const esccommentaire2 = document.createElement('p')
-    esccommentaire2.innerText = element.commentaire2
-    group.appendChild(esccommentaire2)
-
-    const esccommentaire3 = document.createElement('p')
-    esccommentaire3.innerText = element.commentaire3
-    group.appendChild(esccommentaire3)
-  }
-}
-  
-// Fonction pour afficher la section manga
-  function showmanga() {
-  
-    const displaymanga = document.getElementById('manga')
-  
-    displaymanga.innerHTML = ""
-  
-    for(const element of manga){
-  
-      const articlemanga = document.createElement('article')
-      articlemanga.classList.add('position')
-      displaymanga.appendChild(articlemanga)
-
-      const group = document.createElement('hgroup')
-      articlemanga.appendChild(group)
-  
-      const mangatitre = document.createElement('h2')
-      mangatitre.innerText = element.titre
-      group.appendChild(mangatitre)
-  
-      const mangacommentaire1 = document.createElement('p')
-      mangacommentaire1.innerText = element.commentaire1
-      group.appendChild(mangacommentaire1)
-  
-      const mangacommentaire2 = document.createElement('p')
-      mangacommentaire2.innerText = element.commentaire2
-      group.appendChild(mangacommentaire2)
-  
-      const divimages = document.createElement('div')
-      divimages.classList.add('slider')
-      articlemanga.appendChild(divimages)
-      
-      const imgcontainer = document.createElement('div')
-      imgcontainer.classList.add('slider-img')
-      divimages.appendChild(imgcontainer)
-      
-      const imgmanga1 = document.createElement('img')
-      imgmanga1.src = element.image1
-      imgmanga1.alt = element.alt1
-      imgcontainer.appendChild(imgmanga1)
-      
-      const imgmanga2 = document.createElement('img')
-      imgmanga2.src = element.image2
-      imgmanga2.alt = element.alt2
-      imgcontainer.appendChild(imgmanga2)
-      
-      const imgmanga3 = document.createElement('img')
-      imgmanga3.src = element.image3
-      imgmanga3.alt = element.alt3
-      imgcontainer.appendChild(imgmanga3)
-      
-      const imgmanga4 = document.createElement('img')
-      imgmanga4.src = element.image4
-      imgmanga4.alt = element.alt4
-      imgcontainer.appendChild(imgmanga4)
-  
-      const imgmanga5 = document.createElement('img')
-      imgmanga5.src = element.image5
-      imgmanga5.alt = element.alt5
-      imgcontainer.appendChild(imgmanga5)
-      
-      const imgmangaretour = document.createElement('img')
-      imgmangaretour.src = element.image1
-      imgmangaretour.alt = element.alt1
-      imgcontainer.appendChild(imgmangaretour)
-  
-    }
-
-}
-
 // Fonction pour afficher la section setup
 function showsetup() {
 
@@ -396,6 +254,7 @@ function showsetup() {
   }
 
 }
+
 
 // Fonction pour afficher la section jeux
 function showjeux() {
@@ -469,6 +328,78 @@ function showjeux() {
   }
 }
 
+  
+// Fonction pour afficher la section manga
+  function showmanga() {
+  
+    const displaymanga = document.getElementById('manga')
+  
+    displaymanga.innerHTML = ""
+  
+    for(const element of manga){
+  
+      const articlemanga = document.createElement('article')
+      articlemanga.classList.add('position')
+      displaymanga.appendChild(articlemanga)
+
+      
+      const divimages = document.createElement('div')
+      divimages.classList.add('slider')
+      articlemanga.appendChild(divimages)
+      
+      const imgcontainer = document.createElement('div')
+      imgcontainer.classList.add('slider-img')
+      divimages.appendChild(imgcontainer)
+      
+      const imgmanga1 = document.createElement('img')
+      imgmanga1.src = element.image1
+      imgmanga1.alt = element.alt1
+      imgcontainer.appendChild(imgmanga1)
+      
+      const imgmanga2 = document.createElement('img')
+      imgmanga2.src = element.image2
+      imgmanga2.alt = element.alt2
+      imgcontainer.appendChild(imgmanga2)
+      
+      const imgmanga3 = document.createElement('img')
+      imgmanga3.src = element.image3
+      imgmanga3.alt = element.alt3
+      imgcontainer.appendChild(imgmanga3)
+      
+      const imgmanga4 = document.createElement('img')
+      imgmanga4.src = element.image4
+      imgmanga4.alt = element.alt4
+      imgcontainer.appendChild(imgmanga4)
+      
+      const imgmanga5 = document.createElement('img')
+      imgmanga5.src = element.image5
+      imgmanga5.alt = element.alt5
+      imgcontainer.appendChild(imgmanga5)
+      
+      const imgmangaretour = document.createElement('img')
+      imgmangaretour.src = element.image1
+      imgmangaretour.alt = element.alt1
+      imgcontainer.appendChild(imgmangaretour)
+      
+      const group = document.createElement('hgroup')
+      articlemanga.appendChild(group)
+  
+      const mangatitre = document.createElement('h2')
+      mangatitre.innerText = element.titre
+      group.appendChild(mangatitre)
+  
+      const mangacommentaire1 = document.createElement('p')
+      mangacommentaire1.innerText = element.commentaire1
+      group.appendChild(mangacommentaire1)
+  
+      const mangacommentaire2 = document.createElement('p')
+      mangacommentaire2.innerText = element.commentaire2
+      group.appendChild(mangacommentaire2)
+    }
+
+}
+
+
 // Fonction pour afficher la section lego
 function showlego() {
 
@@ -481,6 +412,21 @@ function showlego() {
     const articlelego = document.createElement('article')
     articlelego.classList.add('position-inverse')
     displaylego.appendChild(articlelego)
+    
+    const group = document.createElement('hgroup')
+    articlelego.appendChild(group)
+    
+    const legotitre = document.createElement('h2')
+    legotitre.innerText = element.titre
+    group.appendChild(legotitre)
+    
+    const legocommentaire1 = document.createElement('p')
+    legocommentaire1.innerText = element.commentaire1
+    group.appendChild(legocommentaire1)
+    
+    const legocommentaire2 = document.createElement('p')
+    legocommentaire2.innerText = element.commentaire2
+    group.appendChild(legocommentaire2)
     
     const divimages = document.createElement('div')
     divimages.classList.add('slider')
@@ -520,22 +466,83 @@ function showlego() {
     imglegoretour.alt = element.alt1
     imgcontainer.appendChild(imglegoretour)
     
-    const group = document.createElement('hgroup')
-    articlelego.appendChild(group)
-    
-    const legotitre = document.createElement('h2')
-    legotitre.innerText = element.titre
-    group.appendChild(legotitre)
-    
-    const legocommentaire1 = document.createElement('p')
-    legocommentaire1.innerText = element.commentaire1
-    group.appendChild(legocommentaire1)
-    
-    const legocommentaire2 = document.createElement('p')
-    legocommentaire2.innerText = element.commentaire2
-    group.appendChild(legocommentaire2)
   }
 }
+
+
+// Fonction pour afficher la section escalade
+function showescalade() {
+
+  const displayescalade = document.getElementById('escalade')
+
+  displayescalade.innerHTML = ""
+
+  for(const element of escalade){
+
+    const articleesc = document.createElement('article')
+    articleesc.classList.add('position')
+    displayescalade.appendChild(articleesc)
+
+    const divimages = document.createElement('div')
+    divimages.classList.add('slider')
+    articleesc.appendChild(divimages)
+    
+    const imgcontainer = document.createElement('div')
+    imgcontainer.classList.add('slider-img')
+    divimages.appendChild(imgcontainer)
+    
+    const imgescalade1 = document.createElement('img')
+    imgescalade1.src = element.image1
+    imgescalade1.alt = element.alt1
+    imgcontainer.appendChild(imgescalade1)
+    
+    const imgescalade2 = document.createElement('img')
+    imgescalade2.src = element.image2
+    imgescalade2.alt = element.alt2
+    imgcontainer.appendChild(imgescalade2)
+    
+    const imgescalade3 = document.createElement('img')
+    imgescalade3.src = element.image3
+    imgescalade3.alt = element.alt3
+    imgcontainer.appendChild(imgescalade3)
+    
+    const imgescalade4 = document.createElement('img')
+    imgescalade4.src = element.image4
+    imgescalade4.alt = element.alt4
+    imgcontainer.appendChild(imgescalade4)
+
+    const imgescalade5 = document.createElement('img')
+    imgescalade5.src = element.image5
+    imgescalade5.alt = element.alt5
+    imgcontainer.appendChild(imgescalade5)
+    
+    const imgescaladeretour = document.createElement('img')
+    imgescaladeretour.src = element.image1
+    imgescaladeretour.alt = element.alt1
+    imgcontainer.appendChild(imgescaladeretour)
+
+    const group = document.createElement('hgroup')
+    articleesc.appendChild(group)
+
+    const esctitre = document.createElement('h2')
+    esctitre.innerText = element.titre
+    group.appendChild(esctitre)
+
+    const esccommentaire1 = document.createElement('p')
+    esccommentaire1.innerText = element.commentaire1
+    group.appendChild(esccommentaire1)
+
+    const esccommentaire2 = document.createElement('p')
+    esccommentaire2.innerText = element.commentaire2
+    group.appendChild(esccommentaire2)
+
+    const esccommentaire3 = document.createElement('p')
+    esccommentaire3.innerText = element.commentaire3
+    group.appendChild(esccommentaire3)
+  }
+}
+
+
 
 // event pour charger le contenu de la page une fois le DOM chargé
 document.addEventListener('DOMContentLoaded', () => {

@@ -211,6 +211,8 @@ header {
   }
   
   .burger-menu.active {
+    width: 12rem;
+    align-items: center;
     display: flex;
   }
 /* -------------------------------------------------------SECTION MON CV---------------------------------------- */
@@ -597,12 +599,12 @@ canvas {
       
       .burger-menu {
         right: 0;
-        width: 10rem; 
+        width: 5rem; 
         padding: 2rem;
       }
       
       .burger-menu a {
-        width: auto;
+        width: 10rem;
         padding: 0.5rem;
         margin: 0.25rem 0;
         font-size: 0.9rem;
