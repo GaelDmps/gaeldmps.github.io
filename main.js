@@ -41,7 +41,7 @@ const projets = [
   {
     image: "./projets/images/boutique.png",
     titre: "Site boutique en ligne",
-    explication: "Cette page est un site de boutique en ligne faite avec du HTML, du CSS et du JavaScript pour les fonctions de tri, de wishlist et de panier. Je l'ai fait en groupe durant ma formation.",
+    explication: "Cette page est un site de boutique en ligne faite avec du HTML, du CSS et du JavaScript pour les fonctions de tri, de wishlist et de panier. Je l'ai fait en groupe durant ma formation. Et amélioré depuis.",
     bouton: "Voir la page",
     lien: "./projets/boutique/index.html",
     page: "_blank",
