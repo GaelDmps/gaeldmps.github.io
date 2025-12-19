@@ -53,3 +53,11 @@ button {
 	background-color: #0C0;
 	cursor: pointer;
 }
+
+footer{
+	background-color: #fff;
+	width: 25%;
+	margin: auto;
+	border-radius: 50px;
+	border: 2px solid #000
+}

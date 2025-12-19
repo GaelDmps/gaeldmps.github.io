@@ -51,6 +51,12 @@ header h1 {
     animation: pulse 2s infinite;
 }
 
+footer{
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+}
+
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
