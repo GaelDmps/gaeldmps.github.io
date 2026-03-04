@@ -8,104 +8,80 @@
 const categories = [
 	{
 		id: 1,
-		name: "Tables"
+		name: "Black clover"
 	},
 	{
 		id: 2,
-		name: "Fauteuils"
+		name: "Demon Slayer"
 	},
-	{
-		id: 3,
-		name: "Chaises de bureau"
-	}
 ];
 
 // Tableau des éléments de la boutique
+// Les images utilisées correspondent aux fichiers présents dans le dossier img
 const products = [
 	{
 		id: 1,
-		price: 150,
-		title: "Table de cuisine bois naturel",
-		image: "img/table-cuisine-bois-naturel.jpg",
+		price: 19.99,
+		title: "Pop Black Clover - Leopold",
+		image: "img/FunkoPop_BlackClover-LeopoldVermillion_1719_700x.webp",
 		categoryId: 1
 	},
 	{
 		id: 2,
-		price: 220,
-		title: "Table de cuisine blanc",
-		image: "img/table-cuisine-blanc.jpg",
+		price: 19.99,
+		title: "Pop Black Clover - Secre",
+		image: "img/FunkoPop_BlackClover-Secre_1721-1_700x.webp",
 		categoryId: 1
 	},
 	{
 		id: 3,
-		price: 280,
-		title: "Table basse de salon",
-		image: "img/table-basse-salon.jpg",
+		price: 19.99,
+		title: "Pop Black Clover - William",
+		image: "img/FunkoPop_BlackClover-William_1718_700x.webp",
 		categoryId: 1
 	},
 	{
 		id: 4,
-		price: 170,
-		title: "Table de salon",
-		image: "img/table-salon.jpg",
+		price: 17.99,
+		title: "Pop Black Clover - Mereoleona",
+		image: "img/11_46efe0d8-bc55-4e15-b90f-0a79e6c5b4ec_700x.webp",
 		categoryId: 1
 	},
 	{
 		id: 5,
-		price: 210,
-		title: "Table à hauteur réglable",
-		image: "img/table-hauteur-reglable.jpg",
-		categoryId: 1
+		price: 17.99,
+		title: "Pop Demon Slayer - Tanjiro",
+		image: "img/12_db3d19bd-a84c-44a5-aedd-a64720674d26_700x.webp",
+		categoryId: 2
 	},
 	{
 		id: 6,
-		price: 90,
-		title: "Table ronde",
-		image: "img/table-ronde.jpg",
+		price: 17.99,
+		title: "Pop Black Clover - Mars",
+		image: "img/18_47f101dc-ca6c-4807-afb6-ee96403b2f4c_700x.webp",
 		categoryId: 1
 	},
 	{
 		id: 7,
-		price: 280,
-		title: "Fauteuil bleu",
-		image: "img/fauteuil-bleu.png",
+		price: 17.99,
+		title: "Pop Demon Slayer - Mitsuri",
+		image: "img/28_8e79fe42-81bc-40f9-a46f-34c4dc90adbe_700x.webp",
 		categoryId: 2
 	},
 	{
 		id: 8,
-		price: 250,
-		title: "Fauteuil vert",
-		image: "img/fauteuil-vert.png",
+		price: 17.99,
+		title: "Pop Demon Slayer - Rengoku",
+		image: "img/31_cd8af4a6-8fb6-41fc-ab7b-598887ee40a8_700x.webp",
 		categoryId: 2
 	},
 	{
 		id: 9,
-		price: 200,
-		title: "Fauteuil marron",
-		image: "img/fauteuil-marron.png",
+		price: 24.99,
+		title: "Pop Demon Slayer - Aoi",
+		image: "img/15351_700x.webp",
 		categoryId: 2
 	},
-	{
-		id: 10,
-		price: 60,
-		title: "Chaise de bureau bleu",
-		image: "img/chaise-bureau-bleu.png",
-		categoryId: 3
-	},
-	{
-		id: 11,
-		price: 120,
-		title: "Fauteuil de bureau bleu",
-		image: "img/fauteuil-bureau-bleu.png",
-		categoryId: 3
-	},
-	{
-		id: 12,
-		price: 160,
-		title: "Fauteuil de bureau noir",
-		image: "img/fauteuil-bureau-noir.png",
-		categoryId: 3
-	}
 ];
 
 // Tableau contenant la liste des envies
